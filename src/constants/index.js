@@ -20,7 +20,9 @@ import {
   carrent,
   jobit,
   tripguide,
-  inex, life, hng,
+  inex,
+  life,
+  hng,
   ilumsa,
   ngmc,
   rccg,
@@ -32,20 +34,24 @@ import {
   movieBox,
   stackauth,
   postman,
+  npm,
+  vite,
 } from "../assets";
 
 export const navLinks = [
+  { id: "home", title: "Home" },
   {
     id: "about",
     title: "About Me",
   },
+  { id: "experience", title: "My Experience" },
   {
-    id: "projects",
-    title: "Projects",
+    id: "tools",
+    title: "My Tools",
   },
   {
-    id: "testimonials",
-    title: "Testimonials",
+    id: "projects",
+    title: "My Projects",
   },
   {
     id: "contact",
@@ -74,67 +80,75 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
+    name: "html5",
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: "css3",
     icon: css,
   },
   {
-    name: "JScript",
+    name: "js",
     icon: javascript,
   },
   {
-    name: "TScript",
+    name: "ts",
     icon: typescript,
   },
   {
-    name: "Nextjs",
+    name: "next",
     icon: next,
   },
   {
-    name: "Reactjs",
+    name: "react",
     icon: reactjs,
   },
   {
-    name: "Reduxxx",
+    name: "redux",
     icon: redux,
   },
   {
-    name: "Tailwindcss",
+    name: "tailwindcss",
     icon: tailwind,
   },
   {
-    name: "Bootstrapcss",
+    name: "bootstrapp",
     icon: bootstrap,
   },
   {
-    name: "Nodejs",
+    name: "node",
     icon: nodejs,
   },
   {
-    name: "Expressjs",
+    name: "express",
     icon: express,
   },
   {
-    name: "Mongodbase",
+    name: "mongo",
     icon: mongodb,
   },
   {
-    name: "Postmannn",
+    name: "post",
     icon: postman,
   },
   {
-    name: "Neondbase",
+    name: "neonn",
     icon: neon,
   },
   {
-    name: "StackAuthhh",
+    name: "stackauthh",
     icon: stackauth,
   },
   {
-    name: "Git!",
+    name: "npmmm",
+    icon: npm,
+  },
+  {
+    name: "vitee",
+    icon: vite,
+  },
+  {
+    name: "git",
     icon: git,
   },
 ];

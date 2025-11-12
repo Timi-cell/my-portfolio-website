@@ -23,6 +23,8 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import next from "./tech/next.png";
+import npm from "./tech/npm.png";
+import vite from "./tech/vite.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -64,7 +66,7 @@ export {
   redux,
   tailwind,
   typescript,
-  next,
+  next, npm, vite,
   stackauth,
   bootstrap,
   express,
