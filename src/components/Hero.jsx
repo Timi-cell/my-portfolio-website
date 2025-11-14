@@ -39,7 +39,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full h-[500px] mx-auto`}>
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -56,7 +56,9 @@ const Hero = () => {
           </h1>
 
           <div className="flex space-x-1 items-center mt-3">
-            <h1 className="text-white text-base font-bold lg:text-xl mr-1">a</h1>
+            <h1 className="text-white text-base font-bold lg:text-xl mr-1">
+              a
+            </h1>
             <h1 className="font-bold text-xl lg:text-3xl text-[#915EFF]">
               <div className="Typewriter" data-testid="typewriter-wrapper">
                 <p
@@ -75,13 +77,13 @@ const Hero = () => {
                   style={{ lineHeight: 0 }}
                   className="Typewriter__wrapper m-0"
                 >
-                  JavaScript Expert
+                  Full Stack Developer
                 </p>
                 <p
                   style={{ lineHeight: 0 }}
                   className="Typewriter__wrapper m-0"
                 >
-                  Problem Solver
+                  Creative Problem Solver
                 </p>
               </div>
             </h1>
@@ -93,19 +95,19 @@ const Hero = () => {
             all businesses.
           </p> */}
           <div class="flex items-center gap-2 mt-5">
-            <div
-              class="cursor-pointer flex items-center gap-2 border-[4px]
-                  h-[40px] rounded-md uppercase font-semibold justify-center  lg:text-base  lg:h-[50px] bg-[#222] text-[13px] border-b-[#915EFF] border-t-0 border-r-0 border-l-0 lg:mt-3 px-3"
+            <a
+              href="/SamuelAlukoCV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <a
-                href="/SamuelAlukoCV.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+              {" "}
+              <div
+                class="cursor-pointer flex items-center gap-2 border-[4px]
+                  h-[40px] rounded-md uppercase font-semibold justify-center  lg:text-base  lg:h-[50px] bg-[#222] text-[13px] border-b-[#915EFF] border-t-0 border-r-0 border-l-0 lg:mt-3 px-3"
               >
-                Check Out My CV
-              </a>
-              <ArrowUpRight />
-            </div>
+                Check Out My CV <ArrowUpRight />{" "}
+              </div>
+            </a>
           </div>
         </div>
       </div>

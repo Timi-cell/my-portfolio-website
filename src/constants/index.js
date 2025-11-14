@@ -17,29 +17,27 @@ import {
   mongodb,
   neon,
   git,
-  carrent,
-  jobit,
-  tripguide,
   inex,
   life,
   hng,
   ilumsa,
   ngmc,
   rccg,
-  geegpay,
-  getlinked,
-  wibe,
-  clearlink,
-  grammce,
-  movieBox,
   stackauth,
   postman,
   npm,
   vite,
+  getlinkedlanding,
+  lifelanding,
+  ngmclanding,
+  healthbridgelanding,
+  gitxlanding,
+  movieboxlanding,
+  knowcountrylanding,
 } from "../assets";
 
 export const navLinks = [
-  { id: "home", title: "Home" },
+  { id: "", title: "Home" },
   {
     id: "about",
     title: "About Me",
@@ -266,7 +264,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "GeegPay",
+    name: "L.I.F.E Foundation",
     description:
       "Explore my Finance Monitoring Web Page—a sleek solution for tracking spending and managing finances. Effortlessly monitor income, set budgets, and gain insights for smarter financial decisions. Elevate your financial journey with user-friendly tools. Discover a snapshot of financial wellness on my portfolio.",
     tags: [
@@ -275,20 +273,20 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "chart.io",
+        name: "tailwind",
         color: "green-text-gradient",
       },
       {
-        name: "tooltip",
+        name: "redux",
         color: "pink-text-gradient",
       },
     ],
-    image: geegpay,
+    image: lifelanding,
     source_code_link: "https://github.com/EssienAbasiama/geegpay-Challenge",
     live_site_link: "https://geegpay-challenge-eta.vercel.app/",
   },
   {
-    name: "getLinked",
+    name: "GetLinked",
     description:
       "GetLinked Hackathon Project: I contributed to a vision-driven endeavor, turning ideas into impactful solutions. Explore my role in solving real-world challenges and pushing tech boundaries at the GetLinked Hackathon—a showcase of innovation in my portfolio.",
     tags: [
@@ -305,13 +303,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: getlinked,
+    image: getlinkedlanding,
     source_code_link: "https://github.com/EssienAbasiama/linked",
 
     live_site_link: "https://get-linked2-0.vercel.app/",
   },
   {
-    name: "Wibe Studio",
+    name: "NGM Clinic",
     description:
       "California-based Fashion Studio: Crafting unique designs and exquisite jewelry. Fashion, our art, transcends boundaries with creativity and happiness. Our vision is to make fashion easy and delightful for all.",
     tags: [
@@ -328,12 +326,12 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: wibe,
+    image: ngmclanding,
     source_code_link: "https://github.com/EssienAbasiama/wibe-studio-house",
     live_site_link: "https://wibe-studio-umber.vercel.app/",
   },
   {
-    name: "ClearLink",
+    name: "Health Bridge",
     description:
       "ClearLink: Uniting the world, one crystal-clear video call at a time. Experience the future of communication with unparalleled simplicity. Start your free trial and discover AI assistant avatargroup. Rated 5.0 from 3,000+ reviews.",
     tags: [
@@ -350,12 +348,12 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: clearlink,
+    image: healthbridgelanding,
     source_code_link: "https://github.com/EssienAbasiama/clearLink",
     live_site_link: "https://clear-link-swart.vercel.app/",
   },
   {
-    name: "Grammercetamol",
+    name: "Git-X",
     description:
       "The Grammcetamol Clinic: Speak English more naturally with confidence and stunning diction. Discover the secrets to fat fluency, boost your word power, and enhance your pronunciation.",
     tags: [
@@ -372,7 +370,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: grammce,
+    image: gitxlanding,
     source_code_link:
       "https://github.com/EssienAbasiama/grammercetamol-interface",
 
@@ -396,13 +394,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: movieBox,
+    image: movieboxlanding,
     source_code_link: "https://github.com/EssienAbasiama/MBox",
 
     live_site_link: "https://moviebox-amber.vercel.app/",
   },
   {
-    name: "Trip Guide",
+    name: "KnowCountry",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
@@ -419,7 +417,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: knowcountrylanding,
     source_code_link: "https://github.com/",
 
     live_site_link: "https://geegpay-challenge-eta.vercel.app/",

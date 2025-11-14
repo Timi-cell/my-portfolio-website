@@ -52,7 +52,7 @@ const Navbar = () => {
             <p className="text-white text-[18px] font-bold cursor-pointer flex ">
               Samuel Aluko
             </p>
-            <p>The Crack Dev</p>
+            <p>{`<TheCrackDev />`}</p>
           </div>
         </Link>
 
@@ -95,7 +95,7 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a href={`#${nav.id}}`}>{nav.title}</a>
                 </li>
               ))}
             </ul>

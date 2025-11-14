@@ -25,29 +25,22 @@ import typescript from "./tech/typescript.png";
 import next from "./tech/next.png";
 import npm from "./tech/npm.png";
 import vite from "./tech/vite.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 import ngmc from "./company/ngmc.jpg";
 import rccg from "./company/rccg.png";
 import ilumsa from "./company/ilumsa.png";
 import inex from "./company/inex.jpg";
 import life from "./company/life.png";
 import hng from "./company/hng.png";
-import geegpay from "./geegpay.png";
-import clearlink from "./clearlink.png";
-import getlinked from "./getlinked.png";
-import wibe from "./wibe.png";
-import grammce from "./grammercetamol.png";
-import movieBox from "./movieBox.png";
+import getlinkedlanding from "./landings/getlinkedlanding.png";
+import lifelanding from "./landings/lifelanding.png";
+import ngmclanding from "./landings/ngmclanding.png";
+import healthbridgelanding from "./landings/healthbridgelanding.png";
+import gitxlanding from "./landings/gitxlanding.png";
+import movieboxlanding from "./landings/movieboxlanding.png";
+import knowcountrylanding from "./landings/knowcountrylanding.png";
+
 export {
-  movieBox,
   logo,
-  geegpay,
-  clearlink,
-  getlinked,
-  wibe,
   backend,
   creator,
   mobile,
@@ -66,17 +59,24 @@ export {
   redux,
   tailwind,
   typescript,
-  next, npm, vite,
+  next,
+  npm,
+  vite,
   stackauth,
   bootstrap,
   express,
   postman,
-  carrent,
-  jobit,
-  tripguide,
   rccg,
-  ngmc, hng,
+  ngmc,
+  hng,
   ilumsa,
-  inex, life,
-  grammce,
+  inex,
+  life,
+  getlinkedlanding,
+  lifelanding,
+  ngmclanding,
+  healthbridgelanding,
+  gitxlanding,
+  movieboxlanding,
+  knowcountrylanding,
 };

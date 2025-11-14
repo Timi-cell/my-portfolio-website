@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { logo } from "../assets";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
@@ -37,29 +38,35 @@ const ServiceCard = ({ index, title, icon }) => (
 
 const About = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Meet Samuel Aluko</p>
-        <h2 className={styles.sectionHeadText}>About Me.</h2>
-      </motion.div>
-
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-      >
-        I'm a skilled software developer with experience in JavaScript and
-        expertise in frameworks like React, Next.js, etc. I'm a quick learner
-        and collaborate closely with clients to create efficient, scalable, and
-        user-friendly solutions that solve real-world problems. Let's work
-        together to bring your ideas to life!
-      </motion.p>
-
-      <div className="mt-20 flex flex-wrap gap-10">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
+    <section className="flex py-10 flex-col-reverse lg:flex-row items-center justify-between gap-5">
+      <div>
+        <motion.div variants={textVariant()}>
+          <p className={styles.sectionSubText}>Meet Samuel Aluko</p>
+          <h2 className={styles.sectionHeadText}>About Me.</h2>
+        </motion.div>
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        >
+          I'm a skilled software developer with experience in JavaScript and
+          expertise in frameworks like React, Next.js, etc. I'm a quick learner
+          and collaborate closely with clients to create efficient, scalable,
+          and user-friendly solutions that solve real-world problems. Let's work
+          together to bring your ideas to life!
+        </motion.p>
+        {/* <div className="mt-20 flex flex-wrap gap-10">
+          {services.map((service, index) => (
+            <ServiceCard key={service.title} index={index} {...service} />
+          ))}
+        </div> */}
       </div>
-    </>
+
+      <img
+        src={logo}
+        alt="A picture of Samuel Aluko"
+        className="w-96 h-96 object-cover rounded-[50%]"
+      />
+    </section>
   );
 };
 

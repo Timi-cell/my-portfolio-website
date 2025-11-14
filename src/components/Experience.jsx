@@ -58,7 +58,7 @@ const ExperienceCard = ({ experience }) => {
 
 const Experience = () => {
   return (
-    <>
+    <section className="py-10">
       <motion.div variants={textVariant()} initial="hidden" whileInView="show">
         <p className={`${styles.sectionSubText} text-center`}>
           What I've done so far
@@ -78,8 +78,8 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </>
+    </section>
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Experience, "experience");
