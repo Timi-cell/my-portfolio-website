@@ -8,7 +8,7 @@ import { styles } from "../styles";
 
 const Tech = () => {
   return (
-    <section className="py-10">
+    <section className="pt-10">
       <motion.div variants={textVariant()} initial="hidden" whileInView="show">
         <p className={`${styles.sectionSubText} text-center`}>
           Here are the languages, tools and technologies that I work with

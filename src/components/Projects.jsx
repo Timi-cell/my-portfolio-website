@@ -65,7 +65,7 @@ const ProjectCard = ({
 
 const Projects = () => {
   return (
-    <section className="py-10">
+    <section className="pt-10">
       <motion.div variants={textVariant()} initial="hidden" whileInView="show">
         <p className={`${styles.sectionSubText} text-center`}>
           Here are some of my works

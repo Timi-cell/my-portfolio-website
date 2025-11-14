@@ -38,7 +38,7 @@ const ServiceCard = ({ index, title, icon }) => (
 
 const About = () => {
   return (
-    <section className="flex py-10 flex-col-reverse lg:flex-row items-center justify-between gap-5">
+    <section className="flex pt-10 flex-col-reverse lg:flex-row items-center justify-between gap-5">
       <div>
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>Meet Samuel Aluko</p>
@@ -64,7 +64,7 @@ const About = () => {
       <img
         src={logo}
         alt="A picture of Samuel Aluko"
-        className="w-96 h-96 object-cover rounded-[50%]"
+        className="w-80 h-80 md:w-96 md:h-96 object-cover rounded-[50%]"
       />
     </section>
   );

@@ -85,6 +85,12 @@ const Hero = () => {
                 >
                   Creative Problem Solver
                 </p>
+                <p
+                  style={{ lineHeight: 0 }}
+                  className="Typewriter__wrapper m-0"
+                >
+                JavaScript Expert
+                </p>
               </div>
             </h1>
           </div>
