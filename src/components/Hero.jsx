@@ -4,6 +4,7 @@ import SplitTextJS from "split-text-js";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ArrowUpRight } from "lucide-react";
+import { textVariant } from "../utils/motion";
 
 const Hero = () => {
   useEffect(() => {
@@ -48,11 +49,15 @@ const Hero = () => {
           <div className="w-1 sm:h-36 h-40 violet-gradient" />
         </div>
 
-        <div>
+        <motion.div
+          variants={textVariant()}
+          initial="hidden"
+          whileInView="show"
+        >
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi there,
             <br></br>
-            I'm <span className="text-[#915EFF]">Samuel Aluko</span>
+            I'm <span className="text-[#915EFF] headerFont">Samuel Aluko</span>
           </h1>
 
           <div className="flex space-x-1 items-center mt-3">
@@ -89,7 +94,7 @@ const Hero = () => {
                   style={{ lineHeight: 0 }}
                   className="Typewriter__wrapper m-0"
                 >
-                JavaScript Expert
+                  JavaScript Expert
                 </p>
               </div>
             </h1>
@@ -115,7 +120,7 @@ const Hero = () => {
               </div>
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div style={{ marginTop: "50px" }}></div>;{/* <ComputersCanvas /> */}
       {/* <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">

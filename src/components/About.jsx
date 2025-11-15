@@ -40,13 +40,19 @@ const About = () => {
   return (
     <section className="flex pt-10 flex-col-reverse lg:flex-row items-center justify-between gap-5">
       <div>
-        <motion.div variants={textVariant()}>
+        <motion.div
+          variants={textVariant()}
+          initial="hidden"
+          whileInView="show"
+        >
           <p className={styles.sectionSubText}>Meet Samuel Aluko</p>
           <h2 className={styles.sectionHeadText}>About Me.</h2>
         </motion.div>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          initial="hidden"
+          whileInView="show"
+          className="mt-4 text-secondary text-base md:text-lg max-w-3xl leading-[30px]"
         >
           I'm a skilled software developer with experience in JavaScript and
           expertise in frameworks like React, Next.js, etc. I'm a quick learner
@@ -61,8 +67,11 @@ const About = () => {
         </div> */}
       </div>
 
-      <img
+      <motion.img
         src={logo}
+        variants={fadeIn("", "", 0.1, 1)}
+        initial="hidden"
+        whileInView="show"
         alt="A picture of Samuel Aluko"
         className="w-80 h-80 md:w-96 md:h-96 object-cover rounded-[50%]"
       />
