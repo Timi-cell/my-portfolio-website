@@ -18,7 +18,12 @@ const ProjectCard = ({
   live_site_link,
 }) => {
   return (
-    <div className="bg-tertiary p-5 rounded-2xl sm:w-full h-[460px]">
+    <motion.div
+      variants={fadeIn("", "", 0.1, 1)}
+      initial="hidden"
+      whileInView="show"
+      className="bg-tertiary p-5 rounded-2xl w-full h-[500px] "
+    >
       <div
         className="relative w-full h-[230px]"
         style={{ cursor: "pointer" }}
@@ -46,6 +51,12 @@ const ProjectCard = ({
 
       <div className="mt-5">
         <h3 className="text-white font-bold text-[24px]">{name}</h3>
+        <div className="flex items-center gap-3 justify-start text-base">
+          <button className="bg-gray-700 rounded-2xl px-5 py-2">
+            Visit Site
+          </button>
+          {/* <button>Github Repo</button> */}
+        </div>
         <p className="mt-2 text-secondary text-[14px]">{description}</p>
       </div>
 
@@ -59,7 +70,7 @@ const ProjectCard = ({
             </p>
           ))}
         </div> */}
-    </div>
+    </motion.div>
   );
 };
 
@@ -88,7 +99,7 @@ const Projects = () => {
         </motion.p>
       </div> */}
 
-      <div className="mt-20 flex flex-wrap justify-between items-center gap-5">
+      <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-2.5">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

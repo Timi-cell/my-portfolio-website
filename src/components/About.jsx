@@ -38,10 +38,10 @@ const ServiceCard = ({ index, title, icon }) => (
 
 const About = () => {
   return (
-    <section className="flex pt-10 flex-col-reverse lg:flex-row items-center justify-between gap-5">
+    <section className="flex pt-10 flex-col-reverse lg:flex-row items-center justify-between gap-11 md:gap-16">
       <div>
         <motion.div
-          variants={textVariant()}
+          variants={fadeIn("", "", 0.1, 1)}
           initial="hidden"
           whileInView="show"
         >
@@ -54,11 +54,15 @@ const About = () => {
           whileInView="show"
           className="mt-4 text-secondary text-base md:text-lg max-w-3xl leading-[30px]"
         >
-          I'm a skilled software developer with experience in JavaScript and
-          expertise in frameworks like React, Next.js, etc. I'm a quick learner
-          and collaborate closely with clients to create efficient, scalable,
-          and user-friendly solutions that solve real-world problems. Let's work
-          together to bring your ideas to life!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolor
+          repellendus beatae deserunt delectus. Quidem, molestiae. Molestias
+          corrupti omnis, excepturi aspernatur voluptatum dignissimos et atque
+          amet, sequi, facere veritatis. Esse cum quibusdam deserunt sed quos
+          aperiam facere dignissimos, excepturi hic perspiciatis repellendus
+          ullam ex illo fuga quam! Asperiores necessitatibus laudantium quia,
+          explicabo adipisci ad repudiandae sunt beatae sed eligendi cumque
+          repellendus quisquam? Iusto, cupiditate. Praesentium excepturi
+          voluptate aperiam rerum aut!
         </motion.p>
         {/* <div className="mt-20 flex flex-wrap gap-10">
           {services.map((service, index) => (

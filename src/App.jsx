@@ -14,7 +14,6 @@ import {
 import Footer from "./components/Footer";
 import { ArrowUp } from "lucide-react";
 
-
 const App = () => {
   const scrollFunc = () => {
     if (

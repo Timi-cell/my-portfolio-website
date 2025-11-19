@@ -44,7 +44,7 @@ const Hero = () => {
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
-        <div className="flex flex-col justify-center items-center mt-5">
+        <div className="flex flex-col justify-center items-center mt-3">
           <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
           <div className="w-1 sm:h-36 h-40 violet-gradient" />
         </div>
@@ -99,13 +99,12 @@ const Hero = () => {
               </div>
             </h1>
           </div>
-          {/* <p class="text-base lg:text-lg pt-3 pb-4 w-full md:w-1/2">
-            Welcome to my digital space. I specialize in crafting responsive and
-            captivating web applications as well as seamless user interfaces
-            that perform and convert for individuals, startups and brands across
-            all businesses.
-          </p> */}
-          <div class="flex items-center gap-2 mt-5">
+          <p class="text-base lg:text-lg w-full md:w-1/2 mt-3">
+            I specialize in building responsive and captivating websites/web
+            applications for individuals, startups and brands. I'm open to
+            collaborations, contract and part/full time roles.
+          </p>
+          <div class="flex items-center gap-2">
             <a
               href="/SamuelAlukoCV.pdf"
               target="_blank"
@@ -114,7 +113,7 @@ const Hero = () => {
               {" "}
               <div
                 class="cursor-pointer flex items-center gap-2 border-[4px]
-                  h-[40px] rounded-md uppercase font-semibold justify-center  lg:text-base  lg:h-[50px] bg-[#222] text-[13px] border-b-[#915EFF] border-t-0 border-r-0 border-l-0 lg:mt-3 px-3"
+                  h-[40px] rounded-md uppercase font-semibold justify-center  lg:text-base  lg:h-[50px] bg-[#222] text-[13px] border-b-[#915EFF] border-t-0 border-r-0 border-l-0 px-3 mt-3"
               >
                 Check Out My CV <ArrowUpRight />{" "}
               </div>
@@ -122,7 +121,8 @@ const Hero = () => {
           </div>
         </motion.div>
       </div>
-      <div style={{ marginTop: "50px" }}></div>;{/* <ComputersCanvas /> */}
+      <div style={{ marginTop: "50px" }}></div>
+      {/* <ComputersCanvas /> */}
       {/* <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
