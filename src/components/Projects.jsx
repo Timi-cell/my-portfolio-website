@@ -22,7 +22,7 @@ const ProjectCard = ({
       variants={fadeIn("", "", 0.1, 1)}
       initial="hidden"
       whileInView="show"
-      className="bg-tertiary p-5 rounded-2xl w-full h-[500px] "
+      className="bg-tertiary p-5 rounded-2xl w-full h-auto pb-10 md:pb-0 md:h-[500px]"
     >
       <div
         className="relative w-full h-[230px]"
@@ -99,7 +99,7 @@ const Projects = () => {
         </motion.p>
       </div> */}
 
-      <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-2.5">
+      <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-x-3 gap-y-6">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

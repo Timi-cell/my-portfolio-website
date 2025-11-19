@@ -38,6 +38,11 @@ import healthbridgelanding from "./landings/healthbridgelanding.png";
 import gitxlanding from "./landings/gitxlanding.png";
 import movieboxlanding from "./landings/movieboxlanding.png";
 import knowcountrylanding from "./landings/knowcountrylanding.png";
+import fylolanding from "./landings/fylolanding.png";
+import clipboardlanding from "./landings/clipboardlanding.png";
+import inexlanding from "./landings/inexlanding.png";
+import dicegamelanding from "./landings/dicegamelanding.png";
+import budgetlanding from "./landings/budgetlanding.png";
 
 export {
   logo,
@@ -79,4 +84,9 @@ export {
   gitxlanding,
   movieboxlanding,
   knowcountrylanding,
+  fylolanding,
+  clipboardlanding,
+  inexlanding,
+  dicegamelanding,
+  budgetlanding,
 };
