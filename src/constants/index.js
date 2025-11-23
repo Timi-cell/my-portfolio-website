@@ -410,7 +410,7 @@ const projects = [
     image: movieboxlanding,
     source_code_link: "https://github.com/Timi-cell/mboxvite",
 
-    live_site_link: "https://moviebox-amber.vercel.app",
+    live_site_link: "https://mboxvite.vercel.app",
   },
   // {
   //   name: "KnowCountry",
