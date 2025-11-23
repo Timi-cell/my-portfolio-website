@@ -114,7 +114,13 @@ const Contact = () => {
          hideClass: {
            popup: "animate__animated animate__fadeOutDown",
          },
-       });
+       }).then(() => {
+         // Scroll to #contact
+         const contactSection = document.querySelector("#contact");
+         if (contactSection) {
+           contactSection.scrollIntoView({ behavior: "smooth" });
+         }
+       });;
      }
    );
     }else{
@@ -141,7 +147,13 @@ const Contact = () => {
        hideClass: {
          popup: "animate__animated animate__fadeOutDown",
        },
-     });
+     }).then(() => {
+       // Scroll to #contact
+       const contactSection = document.querySelector("#contact");
+       if (contactSection) {
+         contactSection.scrollIntoView({ behavior: "smooth" });
+       }
+     });;
     }
    
   };
