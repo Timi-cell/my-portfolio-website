@@ -13,10 +13,17 @@ const Footer = () => {
       </h2>
 
       <div className="flex items-center justify-center gap-6 flex-wrap">
-        <SocialIcon url="https://www.linkedin.com/in/samuelaluko" />
-        <SocialIcon network="whatsapp" url="https://wa.me/2347068526609" />
-        <SocialIcon url="https://x.com/heistimiii" />
-        <SocialIcon url="https://www.github.com/Timi-cell" />
+        <SocialIcon
+          url="https://www.linkedin.com/in/samuelaluko"
+          target="_blank"
+        />
+        <SocialIcon
+          network="whatsapp"
+          url="https://wa.link/2e0fdq"
+          target="_blank"
+        />
+        <SocialIcon url="https://x.com/heistimiii" target="_blank" />
+        <SocialIcon url="https://www.github.com/Timi-cell" target="_blank" />
         {/* <SocialIcon network="mailto" bgColor="red" url="https://x.com/heistimiii" /> */}
       </div>
       <p className="text-sm md:text-base">
