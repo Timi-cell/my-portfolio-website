@@ -122,7 +122,11 @@ const Hero = () => {
                 </span>
               </div>
             </a>
-            <a className="transition-all duration-300 group">
+            <a
+              className="transition-all duration-300 group"
+              href="https://github.com/Timi-cell"
+              target="_blank"
+            >
               {" "}
               <div
                 class="cursor-pointer flex items-center gap-2 border-[4px]

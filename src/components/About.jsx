@@ -55,17 +55,17 @@ const About = () => {
           className="mt-4 text-gray-300 text-base md:text-lg max-w-3xl leading-9"
         >
           Hey there, I'm Samuel and I'm the go-to guy when it comes to anything
-          web development. I specialize in turning ideas into reality using code
-          and using my stack. I enjoy building clean, fast and user-friendly web
-          applications that perform and convert. <br /> <br /> My approach is
-          simple, I make sure I understand the goal, study the design and then
-          write code that's efficient, accessible and easy to maintain. Whether
-          I'm working on a landing page, a web app, or a full product
-          interface... I always aim to create solutions that deliver real value
-          to users. <br /> <br /> If you're someone looking forward to elevating
-          your self-marketing game with a personal website or you own a startup
-          or a brand and you're looking forward to having a proactive member on
-          your team... I'm the one you contact and I'm just one call away.
+          "web development". <br /> I specialize in turning ideas into reality
+          using code and my tech stack. I enjoy building clean, fast and
+          user-friendly web applications that perform and convert. <br /> <br />{" "}
+          My approach is simple, I make sure I understand the goal, study the
+          design and then write code that's efficient, accessible and easy to
+          maintain. Whether I'm working on a landing page, a web app, or a full
+          product interface, I always aim to create solutions that deliver real
+          value to users. <br /> <br /> If you're looking to elevate your
+          personal self-marketing game with a website, or if you own a startup
+          or brand and you need a proactive new team member in web development,
+          I'm the one to contact.
         </motion.p>
         {/* <div className="mt-20 flex flex-wrap gap-10">
           {services.map((service, index) => (
