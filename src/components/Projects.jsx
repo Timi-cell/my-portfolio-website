@@ -112,7 +112,7 @@ const Projects = () => {
         </motion.p>
       </div> */}
 
-      <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-x-3 gap-y-6">
+      <div className="mt-20 grid grid-cols-1  lg:grid-cols-2 items-center gap-x-3 gap-y-6">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
