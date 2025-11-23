@@ -1,12 +1,14 @@
 import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-
+import { SocialIcon } from "react-social-icons/component";
+import "react-social-icons/github";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { ArrowUpRight } from "lucide-react";
 
 const ProjectCard = ({
   index,
@@ -51,9 +53,16 @@ const ProjectCard = ({
 
       <div className="mt-5">
         <h3 className="text-white font-bold text-[24px]">{name}</h3>
-        <div className="flex items-center gap-3 justify-start text-base">
-          <button className="bg-gray-700 rounded-2xl px-5 py-2">
-            Visit Site
+        <div className="flex items-center gap-3 justify-start text-base mt-2">
+          <button className="bg-gray-700 rounded-2xl px-3 py-1.5 flex items-center gap-1.5">
+            <span>Visit Site</span> <ArrowUpRight size={20} />
+          </button>
+          <button className="bg-gray-700 rounded-2xl px-3 py-1.5 flex items-center gap-1.5">
+            <span>Github Repo</span>{" "}
+            <SocialIcon
+              url="https://www.github.com/Timi-cell"
+              style={{ height: 25, width: 25 }}
+            />
           </button>
           {/* <button>Github Repo</button> */}
         </div>

@@ -45,20 +45,20 @@ export const navLinks = [
   { id: "", title: "Home" },
   {
     id: "about",
-    title: "About Me",
+    title: "About",
   },
-  { id: "experience", title: "My Experience" },
+  { id: "experience", title: "Experience" },
   {
     id: "tools",
-    title: "My Tools",
+    title: "Tools",
   },
   {
     id: "projects",
-    title: "My Projects",
+    title: "Projects",
   },
   {
     id: "contact",
-    title: "Contact Me",
+    title: "Contact",
   },
 ];
 
@@ -404,144 +404,144 @@ const projects = [
 
     live_site_link: "https://moviebox-amber.vercel.app/",
   },
-  {
-    name: "KnowCountry",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: knowcountrylanding,
-    source_code_link: "https://github.com/",
+  // {
+  //   name: "KnowCountry",
+  //   description:
+  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+  //   tags: [
+  //     {
+  //       name: "nextjs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "supabase",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: knowcountrylanding,
+  //   source_code_link: "https://github.com/",
 
-    live_site_link: "https://geegpay-challenge-eta.vercel.app/",
-  },
-  {
-    name: "InEx",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: inexlanding,
-    source_code_link: "https://github.com/",
+  //   live_site_link: "https://geegpay-challenge-eta.vercel.app/",
+  // },
+  // {
+  //   name: "InEx",
+  //   description:
+  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+  //   tags: [
+  //     {
+  //       name: "nextjs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "supabase",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: inexlanding,
+  //   source_code_link: "https://github.com/",
 
-    live_site_link: "https://geegpay-challenge-eta.vercel.app/",
-  },
-  {
-    name: "Clipboard",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: clipboardlanding,
-    source_code_link: "https://github.com/",
+  //   live_site_link: "https://geegpay-challenge-eta.vercel.app/",
+  // },
+  // {
+  //   name: "Clipboard",
+  //   description:
+  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+  //   tags: [
+  //     {
+  //       name: "nextjs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "supabase",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: clipboardlanding,
+  //   source_code_link: "https://github.com/",
 
-    live_site_link: "https://geegpay-challenge-eta.vercel.app/",
-  },
-  {
-    name: "Fylo",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: fylolanding,
-    source_code_link: "https://github.com/",
+  //   live_site_link: "https://geegpay-challenge-eta.vercel.app/",
+  // },
+  // {
+  //   name: "Fylo",
+  //   description:
+  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+  //   tags: [
+  //     {
+  //       name: "nextjs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "supabase",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: fylolanding,
+  //   source_code_link: "https://github.com/",
 
-    live_site_link: "https://geegpay-challenge-eta.vercel.app/",
-  },
-  {
-    name: "Dice Game",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: dicegamelanding,
-    source_code_link: "https://github.com/",
+  //   live_site_link: "https://geegpay-challenge-eta.vercel.app/",
+  // },
+  // {
+  //   name: "Dice Game",
+  //   description:
+  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+  //   tags: [
+  //     {
+  //       name: "nextjs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "supabase",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: dicegamelanding,
+  //   source_code_link: "https://github.com/",
 
-    live_site_link: "https://geegpay-challenge-eta.vercel.app/",
-  },
-  {
-    name: "Budget Calc",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: budgetlanding,
-    source_code_link: "https://github.com/",
+  //   live_site_link: "https://geegpay-challenge-eta.vercel.app/",
+  // },
+  // {
+  //   name: "Budget Calc",
+  //   description:
+  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+  //   tags: [
+  //     {
+  //       name: "nextjs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "supabase",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: budgetlanding,
+  //   source_code_link: "https://github.com/",
 
-    live_site_link: "https://geegpay-challenge-eta.vercel.app/",
-  },
+  //   live_site_link: "https://geegpay-challenge-eta.vercel.app/",
+  // },
 ];
 
 export { services, technologies, experiences, testimonials, projects };

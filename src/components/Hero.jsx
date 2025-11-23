@@ -40,9 +40,9 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className={`relative w-full h-[500px] mx-auto`}>
+    <section className={`relative w-full h-[550px] mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-3">
           <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
@@ -104,18 +104,34 @@ const Hero = () => {
             applications for individuals, startups and brands. I'm open to
             collaborations, contract and part/full time roles.
           </p>
-          <div class="flex items-center gap-2">
+          <div class="flex flex-col md:flex-row justify-start items-start gap-2 md:gap-4">
             <a
               href="/SamuelAlukoCV.pdf"
               target="_blank"
               rel="noopener noreferrer"
+              className="transition-all duration-300 group"
             >
+              {" "}
+              <div
+                class="cursor-pointer flex items-center gap-2 border-[4px]
+                  h-[40px] rounded-md uppercase font-semibold justify-center  lg:text-base  lg:h-[50px] bg-[#222] text-[13px] border-b-[#915EFF] border-t-0 border-r-0 border-l-0 px-3 mt-3 "
+              >
+                Check Out My CV
+                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                  <ArrowUpRight />
+                </span>
+              </div>
+            </a>
+            <a className="transition-all duration-300 group">
               {" "}
               <div
                 class="cursor-pointer flex items-center gap-2 border-[4px]
                   h-[40px] rounded-md uppercase font-semibold justify-center  lg:text-base  lg:h-[50px] bg-[#222] text-[13px] border-b-[#915EFF] border-t-0 border-r-0 border-l-0 px-3 mt-3"
               >
-                Check Out My CV <ArrowUpRight />{" "}
+                Visit my Github Profile
+                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                  <ArrowUpRight />
+                </span>
               </div>
             </a>
           </div>

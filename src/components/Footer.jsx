@@ -1,22 +1,28 @@
+import { SocialIcon } from "react-social-icons/component";
+import "react-social-icons/linkedin";
+import "react-social-icons/x";
+import "react-social-icons/github";
+import "react-social-icons/whatsapp";
+// import "react-social-icons/";
+
 const Footer = () => {
   return (
-    <>
-      <div className="flex md:flex-row-reverse md:justify-between items-center flex-col px-10 h-30">
-        <div className="flex md:flex-row flex-col md:gap-2 items-center justify-center">
-          <p className="text-center text-sm">Got a question ?</p>
-          <a
-            href="mailto:essienabasiama11@gmail.com"
-            className="text-sm text-center font-semibold text-indigo-500"
-          >
-            hello@kingx.com
-          </a>
-        </div>
-        <div className="flex justify-center items-center pt-3 text-center font-light text-sm gap-0.5">
-          <span>Made with</span>
-          <span>by me</span>
-        </div>
+    <div className="bg-tertiary pt-10 pb-5 px-5 flex flex-col items-center justify-center gap-10 text-base md:text-lg text-center">
+      <h2 className="text-base md:text-lg">
+        You can also connect with me via:
+      </h2>
+
+      <div className="flex items-center justify-center gap-6 flex-wrap">
+        <SocialIcon url="https://www.linkedin.com/in/samuelaluko" />
+        <SocialIcon network="whatsapp" url="https://wa.me/2347068526609" />
+        <SocialIcon url="https://x.com/heistimiii" />
+        <SocialIcon url="https://www.github.com/Timi-cell" />
+        {/* <SocialIcon network="mailto" bgColor="red" url="https://x.com/heistimiii" /> */}
       </div>
-    </>
+      <p className="text-sm md:text-base">
+        &copy; {new Date().getFullYear()} - Samuel The Crack Dev.
+      </p>
+    </div>
   );
 };
 
