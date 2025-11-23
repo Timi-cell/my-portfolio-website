@@ -54,16 +54,20 @@ const ProjectCard = ({
       <div className="mt-5">
         <h3 className="text-white font-bold text-[24px]">{name}</h3>
         <div className="flex items-center gap-3 justify-start text-base mt-2">
-          <button className="bg-gray-700 rounded-2xl px-3 py-1.5 flex items-center gap-1.5">
-            <span>Visit Site</span> <ArrowUpRight size={20} />
-          </button>
-          <button className="bg-gray-700 rounded-2xl px-3 py-1.5 flex items-center gap-1.5">
-            <span>Github Repo</span>{" "}
-            <SocialIcon
-              url="https://www.github.com/Timi-cell"
-              style={{ height: 25, width: 25 }}
-            />
-          </button>
+          <a href={live_site_link} target="_blank">
+            <button className="bg-gray-700 rounded-2xl px-3 py-1.5 flex items-center gap-1.5">
+              <span>Visit Site</span> <ArrowUpRight size={20} />
+            </button>
+          </a>
+          <a href={source_code_link} target="_blank">
+            <button className="bg-gray-700 rounded-2xl px-3 py-1.5 flex items-center gap-1.5">
+              <span>Github Repo</span>{" "}
+              <SocialIcon
+                url="https://www.github.com/Timi-cell"
+                style={{ height: 25, width: 25 }}
+              />
+            </button>
+          </a>
           {/* <button>Github Repo</button> */}
         </div>
         <p className="mt-2 text-secondary text-[14px]">{description}</p>

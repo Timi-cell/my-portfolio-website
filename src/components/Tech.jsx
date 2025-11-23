@@ -23,7 +23,9 @@ const Tech = () => {
                 src={technology.icon}
                 alt={technology.name}
                 className={
-                  technology.name === "next" || technology.name === "express"
+                  technology.name === "next" ||
+                  technology.name === "express" ||
+                  technology.name === "github"
                     ? "brightness-0 invert"
                     : ""
                 }

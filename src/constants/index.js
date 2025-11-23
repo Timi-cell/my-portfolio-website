@@ -10,6 +10,7 @@ import {
   express,
   html,
   css,
+  sass,
   reactjs,
   redux,
   tailwind,
@@ -17,6 +18,7 @@ import {
   mongodb,
   neon,
   git,
+  github,
   inex,
   life,
   hng,
@@ -115,6 +117,10 @@ const technologies = [
     icon: tailwind,
   },
   {
+    name: "sass",
+    icon: sass,
+  },
+  {
     name: "bootstrapp",
     icon: bootstrap,
   },
@@ -153,6 +159,10 @@ const technologies = [
   {
     name: "git",
     icon: git,
+  },
+  {
+    name: "github",
+    icon: github,
   },
 ];
 
@@ -271,7 +281,7 @@ const projects = [
   {
     name: "L.I.F.E Foundation",
     description:
-      "Explore my Finance Monitoring Web Page—a sleek solution for tracking spending and managing finances. Effortlessly monitor income, set budgets, and gain insights for smarter financial decisions. Elevate your financial journey with user-friendly tools. Discover a snapshot of financial wellness on my portfolio.",
+      "A compassionate non-profit dedicated to restoring dignity, providing education, and fighting poverty for vulnerable individuals. The L.I.F.E Foundation operates on love and service, empowering communities to thrive through sustainable support and outreach.",
     tags: [
       {
         name: "react",
@@ -287,13 +297,13 @@ const projects = [
       },
     ],
     image: lifelanding,
-    source_code_link: "https://github.com/EssienAbasiama/geegpay-Challenge",
-    live_site_link: "https://geegpay-challenge-eta.vercel.app/",
+    source_code_link: "https://github.com/Timi-cell/life-foundation",
+    live_site_link: "https://lifefoundation.vercel.app",
   },
   {
     name: "GetLinked",
     description:
-      "GetLinked Hackathon Project: I contributed to a vision-driven endeavor, turning ideas into impactful solutions. Explore my role in solving real-world challenges and pushing tech boundaries at the GetLinked Hackathon—a showcase of innovation in my portfolio.",
+      "I contributed to a seamless professional networking platform that connects creatives, entrepreneurs, and job seekers. GetLinked empowers users to build meaningful connections, showcase their skills, and grow their careers with ease.",
     tags: [
       {
         name: "react",
@@ -309,14 +319,14 @@ const projects = [
       },
     ],
     image: getlinkedlanding,
-    source_code_link: "https://github.com/EssienAbasiama/linked",
+    source_code_link: "https://github.com/Timi-cell/linkedHackathon",
 
     live_site_link: "https://get-linked2-0.vercel.app/",
   },
   {
     name: "NGM Clinic",
     description:
-      "California-based Fashion Studio: Crafting unique designs and exquisite jewelry. Fashion, our art, transcends boundaries with creativity and happiness. Our vision is to make fashion easy and delightful for all.",
+      "A web application for NGM Clinic, a dedicated maternal-care clinic offering compassionate support for women through every stage of pregnancy. NGM Clinic provides safe, high-quality antenatal services and a nurturing environment designed to protect mothers’ health.",
     tags: [
       {
         name: "reactjs",
@@ -332,13 +342,13 @@ const projects = [
       },
     ],
     image: ngmclanding,
-    source_code_link: "https://github.com/EssienAbasiama/wibe-studio-house",
-    live_site_link: "https://wibe-studio-umber.vercel.app/",
+    source_code_link: "https://github.com/Timi-cell/ngm-clinic",
+    live_site_link: "https://ngmclinic.netlify.app",
   },
   {
     name: "Health Bridge",
     description:
-      "ClearLink: Uniting the world, one crystal-clear video call at a time. Experience the future of communication with unparalleled simplicity. Start your free trial and discover AI assistant avatargroup. Rated 5.0 from 3,000+ reviews.",
+      "A warm, simple and accessible platform designed to bridge healthcare gaps for families. Health Bridge connects households to trusted medical support, making consultations, guidance, and essential health resources easy to reach, reliable, and tailored to every family’s needs.",
     tags: [
       {
         name: "react",
@@ -354,13 +364,13 @@ const projects = [
       },
     ],
     image: healthbridgelanding,
-    source_code_link: "https://github.com/EssienAbasiama/clearLink",
-    live_site_link: "https://clear-link-swart.vercel.app/",
+    source_code_link: "https://github.com/Timi-cell/health-bridge",
+    live_site_link: "https://health-bridge.vercel.app",
   },
   {
     name: "Git-X",
     description:
-      "The Grammcetamol Clinic: Speak English more naturally with confidence and stunning diction. Discover the secrets to fat fluency, boost your word power, and enhance your pronunciation.",
+      "A simple tool that makes discovering GitHub users effortless. FindGitX quickly pulls up profiles, displays key information, and helps developers explore repositories with ease, making it perfect for research, collaboration, and staying connected to the broader developer community.",
     tags: [
       {
         name: "react",
@@ -376,15 +386,13 @@ const projects = [
       },
     ],
     image: gitxlanding,
-    source_code_link:
-      "https://github.com/EssienAbasiama/grammercetamol-interface",
-
-    live_site_link: "https://grammercetamoll.netlify.app/",
+    source_code_link: "https://github.com/Timi-cell/GitX",
+    live_site_link: "https://findgitx.netlify.app",
   },
   {
     name: "MovieBox",
     description:
-      "Your gateway to cinematic delight. Explore, discover, and enjoy movies effortlessly with our app. Instant access to favorites, trailers, and more.",
+      "A sleek, interactive movie discovery app that lets users browse, search, and explore films.  MovieBox is a modern, responsive web app template for movie discovery. It provides a clean interface to showcase films, search by categories, and display movie details, perfect for building cinema-related projects quickly.",
     tags: [
       {
         name: "react",
@@ -400,9 +408,9 @@ const projects = [
       },
     ],
     image: movieboxlanding,
-    source_code_link: "https://github.com/EssienAbasiama/MBox",
+    source_code_link: "https://github.com/Timi-cell/mboxvite",
 
-    live_site_link: "https://moviebox-amber.vercel.app/",
+    live_site_link: "https://moviebox-amber.vercel.app",
   },
   // {
   //   name: "KnowCountry",
