@@ -45,7 +45,9 @@ const About = () => {
           initial="hidden"
           whileInView="show"
         >
-          <p className={styles.sectionSubText}>Meet Samuel Aluko</p>
+          <p className={styles.sectionSubText}>
+            Meet Samuel Oluwatimilehin Aluko
+          </p>
           <h2 className={styles.sectionHeadText}>About Me.</h2>
         </motion.div>
         <motion.p

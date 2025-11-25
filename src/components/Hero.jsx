@@ -132,7 +132,7 @@ const Hero = () => {
                 class="cursor-pointer flex items-center gap-2 border-[4px]
                   h-[40px] rounded-md uppercase font-semibold justify-center  lg:text-base  lg:h-[50px] bg-[#222] text-[13px] border-b-[#915EFF] border-t-0 border-r-0 border-l-0 px-3 mt-3"
               >
-                Book A Call With Me
+                Book A Free Call With Me
                 <span className="transition-transform duration-300 group-hover:translate-x-1">
                   <ArrowUpRight />
                 </span>
