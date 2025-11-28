@@ -279,6 +279,29 @@ const testimonials = [
 
 const projects = [
   {
+    name: "InEx.",
+    description:
+      "I built InEx back in 2023 out of frustration because I needed a fast and clear interface to log my income and expenses. InEx is an Income-Expense web application that helps you keep track of your income and expenses. You can use a single currency of your choice to log all your transactions, categorize them, and view insightful reports to manage your finances effectively.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: inexlanding,
+    source_code_link: "https://github.com/Timi-cell/inex-frontend",
+
+    live_site_link: "https://inex-suzj.onrender.com",
+  },
+  {
     name: "L.I.F.E Foundation",
     description:
       "A compassionate non-profit dedicated to restoring dignity, providing education, and fighting poverty for vulnerable individuals. The L.I.F.E Foundation operates on love and service, empowering communities to thrive through sustainable support and outreach.",
