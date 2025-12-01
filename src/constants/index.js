@@ -299,7 +299,7 @@ const projects = [
     image: inexlanding,
     source_code_link: "https://github.com/Timi-cell/inex-frontend",
 
-    live_site_link: "https://inex-suzj.onrender.com",
+    live_site_link: "https://inexapp.vercel.app",
   },
   {
     name: "L.I.F.E Foundation",
