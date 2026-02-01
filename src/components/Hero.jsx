@@ -82,7 +82,7 @@ const Hero = () => {
                   style={{ lineHeight: 0 }}
                   className="Typewriter__wrapper m-0"
                 >
-                  Full Stack Developer
+                  Cracked Developer
                 </p>
                 <p
                   style={{ lineHeight: 0 }}
@@ -105,23 +105,23 @@ const Hero = () => {
             collaborations, contract and part/full time roles.
           </p>
           <div class="flex flex-col md:flex-row justify-start items-start gap-2 md:gap-4">
-            <a
-              href="/SamuelAlukoCV.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-all duration-300 group"
-            >
-              {" "}
-              <div
-                class="cursor-pointer flex items-center gap-2 border-[4px]
-                  h-[40px] rounded-md uppercase font-semibold justify-center  lg:text-base  lg:h-[50px] bg-[#222] text-[13px] border-b-[#915EFF] border-t-0 border-r-0 border-l-0 px-3 mt-3 "
-              >
-                Check Out My CV
-                <span className="transition-transform duration-300 group-hover:translate-x-1">
-                  <ArrowUpRight />
-                </span>
-              </div>
-            </a>
+            {/*<a*/}
+            {/*  href="/SamuelAlukoCV.pdf"*/}
+            {/*  target="_blank"*/}
+            {/*  rel="noopener noreferrer"*/}
+            {/*  className="transition-all duration-300 group"*/}
+            {/*>*/}
+            {/*  {" "}*/}
+            {/*  <div*/}
+            {/*    class="cursor-pointer flex items-center gap-2 border-[4px]*/}
+            {/*      h-[40px] rounded-md uppercase font-semibold justify-center  lg:text-base  lg:h-[50px] bg-[#222] text-[13px] border-b-[#915EFF] border-t-0 border-r-0 border-l-0 px-3 mt-3 "*/}
+            {/*  >*/}
+            {/*    Check Out My CV*/}
+            {/*    <span className="transition-transform duration-300 group-hover:translate-x-1">*/}
+            {/*      <ArrowUpRight />*/}
+            {/*    </span>*/}
+            {/*  </div>*/}
+            {/*</a>*/}
             <a
               className="transition-all duration-300 group"
               href="https://calendly.com/adedayotimilehin10/30min"

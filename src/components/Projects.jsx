@@ -59,15 +59,15 @@ const ProjectCard = ({
               <span>Visit Site</span> <ArrowUpRight size={20} />
             </button>
           </a>
-          <a href={source_code_link} target="_blank">
-            <button className="bg-gray-700 rounded-2xl px-3 py-1.5 flex items-center gap-1.5">
-              <span>Github Repo</span>{" "}
-              <SocialIcon
-                url="https://www.github.com/Timi-cell"
-                style={{ height: 25, width: 25 }}
-              />
-            </button>
-          </a>
+            {source_code_link && <a href={source_code_link} target="_blank">
+                <button className="bg-gray-700 rounded-2xl px-3 py-1.5 flex items-center gap-1.5">
+                    <span>Github Repo</span>{" "}
+                    <SocialIcon
+                        url="https://www.github.com/Timi-cell"
+                        style={{height: 25, width: 25}}
+                    />
+                </button>
+            </a>}
           {/* <button>Github Repo</button> */}
         </div>
         <p className="mt-2 text-secondary text-[14px]">{description}</p>

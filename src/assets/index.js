@@ -42,6 +42,7 @@ import knowcountrylanding from "./landings/knowcountrylanding.png";
 import fylolanding from "./landings/fylolanding.png";
 import clipboardlanding from "./landings/clipboardlanding.png";
 import inexlanding from "./landings/inexlanding.png";
+import ilumsalanding from "./landings/ilumsalanding.png";
 import dicegamelanding from "./landings/dicegamelanding.png";
 import budgetlanding from "./landings/budgetlanding.png";
 
@@ -87,6 +88,7 @@ export {
   fylolanding,
   clipboardlanding,
   inexlanding,
+    ilumsalanding,
   dicegamelanding,
   budgetlanding,
 };

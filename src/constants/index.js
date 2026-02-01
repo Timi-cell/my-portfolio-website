@@ -39,6 +39,7 @@ import {
   knowcountrylanding,
   clipboardlanding,
   inexlanding,
+ilumsalanding,
   dicegamelanding,
   budgetlanding,
 } from "../assets";
@@ -172,13 +173,13 @@ const experiences = [
     company_name: "ILUMSA",
     icon: ilumsa,
     iconBg: "#fff",
-    date: "Oct 2025 - Present",
+    date: "Oct 2025 - Jan 2026",
     points: [
-      "Leading the frontend direction from architecture and design implementation to ensuring responsiveness and performance.",
-      "Working closely with backend developers to align APIs and data flow for a seamless user experience.",
-      "Collaborating with the design team to bring clean, intuitive interfaces to life.",
-      "Setting up best practices, coding standards, and workflows for the frontend team.",
-      "Focusing on building a functional and user-centered interface that reflects the association’s professionalism and vision.",
+      "Led the frontend direction from architecture and design implementation to ensuring responsiveness and performance.",
+      "Worked closely with backend developers to align APIs and data flow for a seamless user experience.",
+      "Collaborated with the design team to bring clean, intuitive interfaces to life.",
+      "Set best practices, coding standards, and workflows for the frontend team.",
+      "Focused on building a functional and user-centered interface that reflects the association’s professionalism and vision.",
     ],
   },
   {
@@ -186,11 +187,11 @@ const experiences = [
     company_name: "NEXT GEN MEDICS",
     icon: ngmc,
     iconBg: "#0227D4",
-    date: "Aug 2025 - Present",
+    date: "Aug 2025 - Dec 2025",
     points: [
       "Developed a structured curriculum that simplifies coding for beginners and aligns with the needs of medical students.",
-      "Training medical students in core frontend technologies (HTML, CSS, JavaScript), helping them build their first functional web projects.",
-      "Supporting learners through guidance and mentorship, aimed at improving coding confidence and problem-solving skills.",
+      "Trained medical students in core frontend technologies (HTML, CSS, JavaScript), helping them build their first functional web projects.",
+      "Supported learners through guidance and mentorship, aimed at improving coding confidence and problem-solving skills.",
     ],
   },
   {
@@ -213,12 +214,12 @@ const experiences = [
     date: "May 2023 - Aug 2023",
     points: [
       "InEx is a full-stack web application I built in 2023. I created InEx out of frustration with not knowing where my money was going or coming from. My goal was to build a simple, user-friendly tool to track expenses and manage finances efficiently in different currencies.",
-      "Designing and developing the frontend architecture using React.js.",
-      "Building and maintaining RESTful APIs and backend logic using Node.js, Express, and MongoDB.",
-      "Implementing user authentication, data storage, and file upload features.",
-      "Focusing on some UI/UX to ensure a simple, clean and responsive interface for users.",
-      "Deploying the web app using free hosting platforms (initially Cyclic.sh) and managed app updates and performance improvements.",
-      "Handling full-stack maintenance such as debugging, version control (GitHub), and API integration.",
+      "Designed and developed the frontend architecture using React.js.",
+      "Built and maintained RESTful APIs and backend logic using Node.js, Express, and MongoDB.",
+      "Implemented user authentication, data storage, and file upload features.",
+      "Focused on some UI/UX to ensure a simple, clean and responsive interface for users.",
+      "Deployed the web app using free hosting platforms (initially Cyclic.sh) and managed app updates and performance improvements.",
+      "Handled full-stack maintenance such as debugging, version control (GitHub), and API integration.",
     ],
   },
   {
@@ -228,7 +229,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Apr 2022 - Jan 2023",
     points: [
-      "Built the organization’s first website from the ground up using ReactJS, creating a digital presence that expande9d their reach to donors, volunteers, and partners.",
+      "Built the organization’s first website from the ground up using ReactJS, creating a digital presence that expanded their reach to donors, volunteers, and partners.",
       "Designed and implemented a user-friendly frontend interface, making it easy for visitors to learn about programs and get involved.",
       "Collaborated with the foundation’s leadership to translate brand goals into a functional site, driving online visibility and credibility.",
     ],
@@ -279,9 +280,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "InEx.",
+    name: "ILUMSA",
     description:
-      "I built InEx back in 2023 out of frustration because I needed a fast and clear interface to log my income and expenses. InEx is an Income-Expense web application that helps you keep track of your income and expenses. You can use a single currency of your choice to log all your transactions, categorize them, and view insightful reports to manage your finances effectively.",
+      "The official site for the Ilorin University Medical Students' Association, a student-led body fostering academic excellence, leadership, community service, and professional growth among medical students at the University of Ilorin.",
     tags: [
       {
         name: "nextjs",
@@ -296,11 +297,34 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: inexlanding,
-    source_code_link: "https://github.com/Timi-cell/inex-frontend",
+    image: ilumsalanding,
+    // source_code_link: "https://github.com/Timi-cell/inex-frontend",
 
-    live_site_link: "https://inexapp.vercel.app",
+    live_site_link: "https://www.ilumsa.org/",
   },
+    {
+        name: "InEx.",
+        description:
+            "I built InEx back in 2023 out of frustration because I needed a fast and clear interface to log my income and expenses. InEx is an Income-Expense web application that helps you keep track of your income and expenses. You can use a single currency of your choice to log all your transactions, categorize them, and view insightful reports to manage your finances effectively.",
+        tags: [
+            {
+                name: "nextjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "supabase",
+                color: "green-text-gradient",
+            },
+            {
+                name: "css",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: inexlanding,
+        source_code_link: "https://github.com/Timi-cell/inex-frontend",
+
+        live_site_link: "https://inexapp.vercel.app",
+    },
   {
     name: "L.I.F.E Foundation",
     description:
