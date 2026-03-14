@@ -81,14 +81,14 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl mr-5`}
+            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[250px] z-50 rounded-xl mr-5`}
           >
             <ul className="list-none flex justify-start items-start flex-col gap-5 pr-16">
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
                   className={`${
-                    active === nav.title ? "text-white" : "text-secondary"
+                   active === nav.title ? "text-white border-b-2 border-blue-800 pb-0.5" : "text-secondary"
                   } hover:text-white text-[18px] font-medium cursor-pointer`}
                   onClick={() => setActive(nav.title)}
                 >

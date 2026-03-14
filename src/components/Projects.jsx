@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons/component";
@@ -64,7 +64,7 @@ const ProjectCard = ({
               <button className="bg-gray-700 rounded-2xl px-3 py-1.5 flex items-center gap-1.5">
                 <span>Github Repo</span>{" "}
                 <SocialIcon
-                network="github"
+                  network="github"
                   // url="https://www.github.com"
                   style={{ height: 25, width: 25 }}
                 />
@@ -76,16 +76,13 @@ const ProjectCard = ({
         <p className="mt-2 text-secondary text-[14px]">{description}</p>
       </div>
 
-       <div className="mt-4 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
-          ))}
-        </div> 
+      <div className="mt-4 flex flex-wrap gap-2">
+        {tags.map((tag) => (
+          <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
+            #{tag.name}
+          </p>
+        ))}
+      </div>
     </motion.div>
   );
 };
@@ -93,20 +90,24 @@ const ProjectCard = ({
 const Projects = () => {
   const [showAll, setShowAll] = useState(false);
   const displayedProjects = showAll ? projects : projects.slice(0, 4);
+  const scrollRef = useRef(null);
 
   const handleToggle = () => {
     if (showAll) {
-      // Scroll to top of the projects component (wrapper section) when clicking "See Less"
-      document.getElementById("projects")?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+      setShowAll(false);
+      setTimeout(() => {
+        scrollRef.current?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }, 100);
+    } else {
+      setShowAll(!showAll);
     }
-    setShowAll(!showAll);
   };
 
   return (
-    <section className="pt-10">
+    <section className="pt-10" ref={scrollRef} id="projects">
       <motion.div variants={textVariant()} initial="hidden" whileInView="show">
         <p className={`${styles.sectionSubText} text-center`}>
           Here are some of my works
@@ -129,9 +130,7 @@ const Projects = () => {
         </motion.p>
       </div> */}
 
-      <div
-        className="mt-20 grid grid-cols-1  lg:grid-cols-2 items-center gap-x-3 gap-y-6"
-      >
+      <div className="mt-20 grid grid-cols-1  lg:grid-cols-2 items-center gap-x-3 gap-y-6">
         {displayedProjects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

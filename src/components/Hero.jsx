@@ -89,7 +89,7 @@ const Hero = () => {
             applications for individuals, startups and brands. I'm open to
             collaborations, contract and part/full time roles.
           </p>
-          <div class="flex flex-col md:flex-row justify-start items-start gap-2 md:gap-4">
+          <div class="relative z-10 flex flex-col md:flex-row justify-start items-start gap-2 md:gap-4">
             <a
               href="/SamuelAlukoCV.pdf"
               target="_blank"
@@ -111,6 +111,7 @@ const Hero = () => {
               className="transition-all duration-300 group"
               href="https://calendly.com/adedayotimilehin10/30min"
               target="_blank"
+              rel="noopener noreferrer"
             >
               {" "}
               <div
