@@ -22,7 +22,7 @@ const Contact = () => {
     form.email.trim() !== "" &&
     form.message.trim() !== "";
 
-    let regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  let regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
   const handleChange = (e) => {
     const { target } = e;
@@ -36,126 +36,125 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(regex.test(form.email)) {
- setLoading(true);
+    if (regex.test(form.email)) {
+      setLoading(true);
 
- emailjs
-   .send(
-     import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-     import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-     {
-       name: form.name,
-       to_name: "Samuel Aluko",
-       email: form.email,
-       to_email: "adedayotimilehin10@gmail.com",
-       message: form.message,
-     },
-     import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-   )
-   .then(
-     () => {
-       setLoading(false);
-       Swal.fire({
-         title: "Message Successfully Sent! 🎉",
-         html: `Thanks for reaching out, ${form.name}. <br />I’ll get back to you ASAP!`,
-         icon: "success",
+      emailjs
+        .send(
+          import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+          {
+            name: form.name,
+            to_name: "Samuel Aluko",
+            email: form.email,
+            to_email: "adedayotimilehin10@gmail.com",
+            message: form.message,
+          },
+          import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
+        )
+        .then(
+          () => {
+            setLoading(false);
+            Swal.fire({
+              title: "Message Successfully Sent! 🎉",
+              html: `Thanks for reaching out, ${form.name}. <br />I’ll get back to you ASAP!`,
+              icon: "success",
 
-         // ---- CUSTOM STYLING ----
-         background: "#1f1f1f",
-         color: "#ffffff",
-         iconColor: "#4f46e5",
-         confirmButtonText: "Okay",
-         confirmButtonColor: "#4f46e5",
-         buttonsStyling: false,
-         customClass: {
-           popup: "rounded-xl shadow-2xl",
-           confirmButton:
-             "px-6 py-2 rounded-lg bg-primary text-white font-semibold hover:bg-primary/80 transition-all",
-         },
+              // ---- CUSTOM STYLING ----
+              background: "#1f1f1f",
+              color: "#ffffff",
+              iconColor: "#4f46e5",
+              confirmButtonText: "Okay",
+              confirmButtonColor: "#4f46e5",
+              buttonsStyling: false,
+              customClass: {
+                popup: "rounded-xl shadow-2xl",
+                confirmButton:
+                  "px-6 py-2 rounded-lg bg-primary text-white font-semibold hover:bg-primary/80 transition-all",
+              },
 
-         // ---- ANIMATION ----
-         showClass: {
-           popup: "animate__animated animate__fadeInUp",
-         },
-         hideClass: {
-           popup: "animate__animated animate__fadeOutDown",
-         },
-       });
+              // ---- ANIMATION ----
+              showClass: {
+                popup: "animate__animated animate__fadeInUp",
+              },
+              hideClass: {
+                popup: "animate__animated animate__fadeOutDown",
+              },
+            });
 
-       setForm({
-         name: "",
-         email: "",
-         message: "",
-       });
-     },
-     (error) => {
-       setLoading(false);
-       console.error(error);
-       Swal.fire({
-         title: "Message Not Sent!",
-         html: `Something went wrong, ${form.name}. <br />Please try again so that I can attend to you ASAP!`,
-         icon: "error",
+            setForm({
+              name: "",
+              email: "",
+              message: "",
+            });
+          },
+          (error) => {
+            setLoading(false);
+            console.error(error);
+            Swal.fire({
+              title: "Message Not Sent!",
+              html: `Something went wrong, ${form.name}. <br />Please try again so that I can attend to you ASAP!`,
+              icon: "error",
 
-         background: "#1f1f1f",
-         color: "#ffffff",
-         iconColor: "#ef4444",
-         confirmButtonText: "Retry",
-         confirmButtonColor: "#ef4444",
-         buttonsStyling: false,
-         customClass: {
-           popup: "rounded-xl shadow-2xl",
-           confirmButton:
-             "px-6 py-2 rounded-lg bg-red-500 text-white font-semibold hover:bg-red-600 transition-all",
-         },
+              background: "#1f1f1f",
+              color: "#ffffff",
+              iconColor: "#ef4444",
+              confirmButtonText: "Retry",
+              confirmButtonColor: "#ef4444",
+              buttonsStyling: false,
+              customClass: {
+                popup: "rounded-xl shadow-2xl",
+                confirmButton:
+                  "px-6 py-2 rounded-lg bg-red-500 text-white font-semibold hover:bg-red-600 transition-all",
+              },
 
-         showClass: {
-           popup: "animate__animated animate__fadeInUp",
-         },
-         hideClass: {
-           popup: "animate__animated animate__fadeOutDown",
-         },
-       }).then(() => {
-         // Scroll to #contact
-         const contactSection = document.querySelector("#contact");
-         if (contactSection) {
-           contactSection.scrollIntoView({ behavior: "smooth" });
-         }
-       });;
-     }
-   );
-    }else{
-     Swal.fire({
-       title: "Wrong email format!",
-       html: `Please fill in a valid email address, ${form.name}.`,
-       icon: "error",
+              showClass: {
+                popup: "animate__animated animate__fadeInUp",
+              },
+              hideClass: {
+                popup: "animate__animated animate__fadeOutDown",
+              },
+            }).then(() => {
+              // Scroll to #contact
+              const contactSection = document.querySelector("#contact");
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: "smooth" });
+              }
+            });
+          },
+        );
+    } else {
+      Swal.fire({
+        title: "Wrong email format!",
+        html: `Please fill in a valid email address, ${form.name}.`,
+        icon: "error",
 
-       background: "#1f1f1f",
-       color: "#ffffff",
-       iconColor: "#ef4444",
-       confirmButtonText: "Okay",
-       confirmButtonColor: "#ef4444",
-       buttonsStyling: false,
-       customClass: {
-         popup: "rounded-xl shadow-2xl",
-         confirmButton:
-           "px-6 py-2 rounded-lg bg-red-500 text-white font-semibold hover:bg-red-600 transition-all",
-       },
+        background: "#1f1f1f",
+        color: "#ffffff",
+        iconColor: "#ef4444",
+        confirmButtonText: "Okay",
+        confirmButtonColor: "#ef4444",
+        buttonsStyling: false,
+        customClass: {
+          popup: "rounded-xl shadow-2xl",
+          confirmButton:
+            "px-6 py-2 rounded-lg bg-red-500 text-white font-semibold hover:bg-red-600 transition-all",
+        },
 
-       showClass: {
-         popup: "animate__animated animate__fadeInUp",
-       },
-       hideClass: {
-         popup: "animate__animated animate__fadeOutDown",
-       },
-     }).then(() => {
-       // Scroll to #contact
-       const contactSection = document.querySelector("#contact");
-       if (contactSection) {
-         contactSection.scrollIntoView({ behavior: "smooth" });
-       }
-     });;
+        showClass: {
+          popup: "animate__animated animate__fadeInUp",
+        },
+        hideClass: {
+          popup: "animate__animated animate__fadeOutDown",
+        },
+      }).then(() => {
+        // Scroll to #contact
+        const contactSection = document.querySelector("#contact");
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: "smooth" });
+        }
+      });
     }
-   
   };
 
   return (
@@ -164,7 +163,10 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className=" bg-black-100 p-8 rounded-2xl w-full md:w-[75%] "
       >
-        <p className={styles.sectionSubText}>Get in touch, Let's discuss.</p>
+        <p className={styles.sectionSubText}>
+          Get in touch, Let's discuss. <br />{" "}
+          <span className="lowercase">(You'll get a prompt reply from me)</span>
+        </p>
         <h3 className={styles.sectionHeadText}>Contact Me.</h3>
 
         <form

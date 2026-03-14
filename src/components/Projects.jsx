@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons/component";
@@ -24,7 +24,7 @@ const ProjectCard = ({
       variants={fadeIn("", "", 0.1, 1)}
       initial="hidden"
       whileInView="show"
-      className="bg-tertiary p-5 rounded-2xl w-full h-auto pb-10 md:pb-0 md:h-[500px]"
+      className="bg-tertiary p-5 rounded-2xl w-full h-auto pb-10 md:pb-0 md:h-[550px]"
     >
       <div
         className="relative w-full h-[230px]"
@@ -59,21 +59,24 @@ const ProjectCard = ({
               <span>Visit Site</span> <ArrowUpRight size={20} />
             </button>
           </a>
-            {source_code_link && <a href={source_code_link} target="_blank">
-                <button className="bg-gray-700 rounded-2xl px-3 py-1.5 flex items-center gap-1.5">
-                    <span>Github Repo</span>{" "}
-                    <SocialIcon
-                        url="https://www.github.com/Timi-cell"
-                        style={{height: 25, width: 25}}
-                    />
-                </button>
-            </a>}
+          {source_code_link && (
+            <a href={source_code_link} target="_blank">
+              <button className="bg-gray-700 rounded-2xl px-3 py-1.5 flex items-center gap-1.5">
+                <span>Github Repo</span>{" "}
+                <SocialIcon
+                network="github"
+                  // url="https://www.github.com"
+                  style={{ height: 25, width: 25 }}
+                />
+              </button>
+            </a>
+          )}
           {/* <button>Github Repo</button> */}
         </div>
         <p className="mt-2 text-secondary text-[14px]">{description}</p>
       </div>
 
-      {/* <div className="mt-4 flex flex-wrap gap-2">
+       <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
@@ -82,12 +85,26 @@ const ProjectCard = ({
               #{tag.name}
             </p>
           ))}
-        </div> */}
+        </div> 
     </motion.div>
   );
 };
 
 const Projects = () => {
+  const [showAll, setShowAll] = useState(false);
+  const displayedProjects = showAll ? projects : projects.slice(0, 4);
+
+  const handleToggle = () => {
+    if (showAll) {
+      // Scroll to top of the projects component (wrapper section) when clicking "See Less"
+      document.getElementById("projects")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+    setShowAll(!showAll);
+  };
+
   return (
     <section className="pt-10">
       <motion.div variants={textVariant()} initial="hidden" whileInView="show">
@@ -112,10 +129,21 @@ const Projects = () => {
         </motion.p>
       </div> */}
 
-      <div className="mt-20 grid grid-cols-1  lg:grid-cols-2 items-center gap-x-3 gap-y-6">
-        {projects.map((project, index) => (
+      <div
+        className="mt-20 grid grid-cols-1  lg:grid-cols-2 items-center gap-x-3 gap-y-6"
+      >
+        {displayedProjects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
+      </div>
+
+      <div className="mt-10 flex justify-center">
+        <button
+          onClick={handleToggle}
+          className="bg-tertiary px-8 py-3 rounded-2xl text-white font-semibold hover:bg-opacity-80 transition-all duration-300"
+        >
+          {showAll ? "See Less Projects" : "See More Projects"}
+        </button>
       </div>
     </section>
   );

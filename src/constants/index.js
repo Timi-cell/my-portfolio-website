@@ -35,11 +35,13 @@ import {
   healthbridgelanding,
   gitxlanding,
   movieboxlanding,
+  inventorylanding,
   fylolanding,
   knowcountrylanding,
   clipboardlanding,
   inexlanding,
-ilumsalanding,
+  cbayodelelanding,
+  ilumsalanding,
   dicegamelanding,
   budgetlanding,
 } from "../assets";
@@ -50,7 +52,7 @@ export const navLinks = [
     id: "about",
     title: "About",
   },
-  { id: "experience", title: "Experience" },
+  // { id: "experience", title: "Experience" },
   {
     id: "tools",
     title: "Tools",
@@ -62,25 +64,6 @@ export const navLinks = [
   {
     id: "contact",
     title: "Contact",
-  },
-];
-
-const services = [
-  {
-    title: "Frontend Developer",
-    icon: web,
-  },
-  {
-    title: "Backend Developer",
-    icon: creator,
-  },
-  {
-    title: "JavaScript Expert",
-    icon: mobile,
-  },
-  {
-    title: "Problem Solver",
-    icon: backend,
   },
 ];
 
@@ -118,7 +101,7 @@ const technologies = [
     icon: tailwind,
   },
   {
-    name: "sass",
+    name: "scss",
     icon: sass,
   },
   {
@@ -289,58 +272,102 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwindcss(daisyui)",
+        color: "white-text-gradient",
+      },
+      {
+        name: "typescript",
         color: "pink-text-gradient",
       },
+      {
+        name: "nodejs",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "express",
+        color: "white-text-gradient",
+      },
+      {
+        name: "npm",
+        color: "blue-text-gradient",
+      },
+      // {
+      //   name: "framer-motion",
+      //   color: "green-text-gradient",
+      // },
     ],
     image: ilumsalanding,
-    // source_code_link: "https://github.com/Timi-cell/inex-frontend",
+    source_code_link: "https://github.com/ilumsa/ilumsa-web",
 
     live_site_link: "https://www.ilumsa.org/",
   },
-    {
-        name: "InEx.",
-        description:
-            "I built InEx back in 2023 out of frustration because I needed a fast and clear interface to log my income and expenses. InEx is an Income-Expense web application that helps you keep track of your income and expenses. You can use a single currency of your choice to log all your transactions, categorize them, and view insightful reports to manage your finances effectively.",
-        tags: [
-            {
-                name: "nextjs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "supabase",
-                color: "green-text-gradient",
-            },
-            {
-                name: "css",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: inexlanding,
-        source_code_link: "https://github.com/Timi-cell/inex-frontend",
+  {
+    name: "InEx.",
+    description:
+      "I built InEx back in 2023 out of frustration because I needed a fast and clear interface to log my income and expenses. InEx is an Income-Expense web application that helps you keep track of your income and expenses. You can use a single currency of your choice to log all your transactions, categorize them, and view insightful reports to manage your finances effectively.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "white-text-gradient",
+      },
+      {
+        name: "express",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "css",
+        color: "white-text-gradient",
+      },
+      {
+        name: "npm",
+        color: "green-text-gradient",
+      },
+    ],
+    image: inexlanding,
+    source_code_link: "https://github.com/Timi-cell/inex-frontend",
 
-        live_site_link: "https://inexapp.vercel.app",
-    },
+    live_site_link: "https://inexapp.vercel.app",
+  },
   {
     name: "L.I.F.E Foundation",
     description:
       "A compassionate non-profit dedicated to restoring dignity, providing education, and fighting poverty for vulnerable individuals. The L.I.F.E Foundation operates on love and service, empowering communities to thrive through sustainable support and outreach.",
     tags: [
       {
-        name: "react",
+        name: "reactjs",
         color: "blue-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "tailwindcss(flowbite)",
         color: "green-text-gradient",
       },
       {
-        name: "redux",
+        name: "scss",
         color: "pink-text-gradient",
+      },
+      {
+        name: "css",
+        color: "white-text-gradient",
+      },
+      {
+        name: "npm",
+        color: "green-text-gradient",
       },
     ],
     image: lifelanding,
@@ -348,20 +375,84 @@ const projects = [
     live_site_link: "https://lifefoundation.vercel.app",
   },
   {
+    name: "The CBAyodele Brand",
+    description:
+      "A professional portfolio website for a digital marketer showcasing expertise in social media marketing and online growth strategies. The platform highlights services, past projects, and proven approaches used to help brands grow visibility and drive results online.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss(daisyui)",
+        color: "green-text-gradient",
+      },
+      {
+        name: "framer-motion",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "white-text-gradient",
+      },
+    ],
+    image: cbayodelelanding,
+    source_code_link: "https://github.com/Timi-cell/thecbaportfolio",
+    live_site_link: "https://cbayodele.com",
+  },
+  {
+    name: "IVT Manager",
+    description:
+      "A powerful inventory management web application designed to track products, manage stock levels, and monitor sales efficiently. IVT Manager streamlines record-keeping, reduces manual errors, and provides real-time insights to help businesses stay organized and make smarter decisions.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "neon",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "stackauth",
+        color: "white-text-gradient",
+      },
+      {
+        name: "npm",
+        color: "green-text-gradient",
+      },
+    ],
+    image: inventorylanding,
+    source_code_link: "https://github.com/Timi-cell/inventory-management",
+    live_site_link: "https://ivtweb.vercel.app",
+  },
+  {
     name: "GetLinked",
     description:
       "I contributed to a seamless professional networking platform that connects creatives, entrepreneurs, and job seekers. GetLinked empowers users to build meaningful connections, showcase their skills, and grow their careers with ease.",
     tags: [
       {
-        name: "react",
+        name: "reactjs",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "css",
         color: "green-text-gradient",
       },
       {
-        name: "animation",
+        name: "vite",
         color: "pink-text-gradient",
       },
     ],
@@ -376,15 +467,15 @@ const projects = [
       "A web application for NGM Clinic, a dedicated maternal-care clinic offering compassionate support for women through every stage of pregnancy. NGM Clinic provides safe, high-quality antenatal services and a nurturing environment designed to protect mothers’ health.",
     tags: [
       {
-        name: "reactjs",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "animation.css",
+        name: "css",
         color: "green-text-gradient",
       },
       {
-        name: "Javascript",
+        name: "javascript",
         color: "pink-text-gradient",
       },
     ],
@@ -398,15 +489,19 @@ const projects = [
       "A warm, simple and accessible platform designed to bridge healthcare gaps for families. Health Bridge connects households to trusted medical support, making consultations, guidance, and essential health resources easy to reach, reliable, and tailored to every family’s needs.",
     tags: [
       {
-        name: "react",
+        name: "reactjs",
         color: "blue-text-gradient",
       },
       {
-        name: "css",
+        name: "scss",
         color: "green-text-gradient",
       },
       {
-        name: "bootstrap",
+        name: "css",
+        color: "white-text-gradient",
+      },
+      {
+        name: "npm",
         color: "pink-text-gradient",
       },
     ],
@@ -420,15 +515,15 @@ const projects = [
       "A simple tool that makes discovering GitHub users effortless. FindGitX quickly pulls up profiles, displays key information, and helps developers explore repositories with ease, making it perfect for research, collaboration, and staying connected to the broader developer community.",
     tags: [
       {
-        name: "react",
+        name: "reactjs",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "bootstrap",
         color: "green-text-gradient",
       },
       {
-        name: "redux",
+        name: "npm",
         color: "pink-text-gradient",
       },
     ],
@@ -436,29 +531,29 @@ const projects = [
     source_code_link: "https://github.com/Timi-cell/GitX",
     live_site_link: "https://findgitx.netlify.app",
   },
-  {
-    name: "MovieBox",
-    description:
-      "A sleek, interactive movie discovery app that lets users browse, search, and explore films.  MovieBox is a modern, responsive web app template for movie discovery. It provides a clean interface to showcase films, search by categories, and display movie details, perfect for building cinema-related projects quickly.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "api",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: movieboxlanding,
-    source_code_link: "https://github.com/Timi-cell/mboxvite",
+  // {
+  //   name: "MovieBox",
+  //   description:
+  //     "A sleek, interactive movie discovery app that lets users browse, search, and explore films.  MovieBox is a modern, responsive web app template for movie discovery. It provides a clean interface to showcase films, search by categories, and display movie details, perfect for building cinema-related projects quickly.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "api",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: movieboxlanding,
+  //   source_code_link: "https://github.com/Timi-cell/mboxvite",
 
-    live_site_link: "https://mboxvite.vercel.app",
-  },
+  //   live_site_link: "https://mboxvite.vercel.app",
+  // },
   // {
   //   name: "KnowCountry",
   //   description:
@@ -599,4 +694,4 @@ const projects = [
   // },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { technologies, experiences, testimonials, projects };

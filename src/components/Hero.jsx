@@ -20,7 +20,7 @@ const Hero = () => {
           rotateX: -20,
           stagger: 0.04,
         },
-        "<"
+        "<",
       );
       // hold on screen for 2s before fading out
       tl.to({}, { duration: 2 });
@@ -32,7 +32,7 @@ const Hero = () => {
           rotateX: 20,
           stagger: 0.004,
         },
-        "<1"
+        "<1",
       );
     });
 
@@ -60,68 +60,53 @@ const Hero = () => {
             I'm <span className="text-[#915EFF] headerFont">Samuel Aluko</span>
           </h1>
 
-          <div className="flex space-x-1 items-center mt-3">
-            <h1 className="text-white text-base font-bold lg:text-xl mr-1">
+          <div className="flex space-x-1 items-start md:items-center mt-3">
+            <h1 className="text-white text-base font-bold lg:text-xl mr-2">
               a
             </h1>
-            <h1 className="font-bold text-xl lg:text-3xl text-[#915EFF]">
+            <h1 className="font-bold text-xl lg:text-3xl text-[#915EFF] relative h-[2em] sm:h-[1.5em] flex-1 min-w-0">
               <div className="Typewriter" data-testid="typewriter-wrapper">
-                <p
-                  style={{ lineHeight: 0 }}
-                  className="Typewriter__wrapper m-0"
-                >
-                  Frontend Developer
+                <p className="Typewriter__wrapper m-0 absolute top-0 left-0 w-full leading-tight break-words">
+                  Frontend Developer.
                 </p>
-                <p
-                  style={{ lineHeight: 0 }}
-                  className="Typewriter__wrapper m-0"
-                >
-                  Backend Developer
+                <p className="Typewriter__wrapper m-0 absolute top-0 left-0 w-full leading-tight break-words">
+                  Low-Code Backend Developer.
                 </p>
-                <p
-                  style={{ lineHeight: 0 }}
-                  className="Typewriter__wrapper m-0"
-                >
-                  Cracked Developer
+                <p className="Typewriter__wrapper m-0 absolute top-0 left-0 w-full leading-tight break-words">
+                  Cracked Developer.
                 </p>
-                <p
-                  style={{ lineHeight: 0 }}
-                  className="Typewriter__wrapper m-0"
-                >
-                  Creative Problem Solver
+                <p className="Typewriter__wrapper m-0 absolute top-0 left-0 w-full leading-tight break-words">
+                  Creative Problem Solver.
                 </p>
-                <p
-                  style={{ lineHeight: 0 }}
-                  className="Typewriter__wrapper m-0"
-                >
-                  JavaScript Expert
+                <p className="Typewriter__wrapper m-0 absolute top-0 left-0 w-full leading-tight break-words">
+                  JS/TS Expert.
                 </p>
               </div>
             </h1>
           </div>
-          <p class="text-base lg:text-lg w-full md:w-1/2 mt-3">
+          <p class="text-base lg:text-lg w-full md:w-1/2 mt-4 md:mt-3">
             I specialize in building responsive and captivating websites/web
             applications for individuals, startups and brands. I'm open to
             collaborations, contract and part/full time roles.
           </p>
           <div class="flex flex-col md:flex-row justify-start items-start gap-2 md:gap-4">
-            {/*<a*/}
-            {/*  href="/SamuelAlukoCV.pdf"*/}
-            {/*  target="_blank"*/}
-            {/*  rel="noopener noreferrer"*/}
-            {/*  className="transition-all duration-300 group"*/}
-            {/*>*/}
-            {/*  {" "}*/}
-            {/*  <div*/}
-            {/*    class="cursor-pointer flex items-center gap-2 border-[4px]*/}
-            {/*      h-[40px] rounded-md uppercase font-semibold justify-center  lg:text-base  lg:h-[50px] bg-[#222] text-[13px] border-b-[#915EFF] border-t-0 border-r-0 border-l-0 px-3 mt-3 "*/}
-            {/*  >*/}
-            {/*    Check Out My CV*/}
-            {/*    <span className="transition-transform duration-300 group-hover:translate-x-1">*/}
-            {/*      <ArrowUpRight />*/}
-            {/*    </span>*/}
-            {/*  </div>*/}
-            {/*</a>*/}
+            <a
+              href="/SamuelAlukoCV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-all duration-300 group"
+            >
+              {" "}
+              <div
+                class="cursor-pointer flex items-center gap-2 border-[4px]
+                 h-[40px] rounded-md uppercase font-semibold justify-center  lg:text-base  lg:h-[50px] bg-[#222] text-[13px] border-b-[#915EFF] border-t-0 border-r-0 border-l-0 px-3 mt-3 "
+              >
+                Check Out My CV
+                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                  <ArrowUpRight />
+                </span>
+              </div>
+            </a>
             <a
               className="transition-all duration-300 group"
               href="https://calendly.com/adedayotimilehin10/30min"

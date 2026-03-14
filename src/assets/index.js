@@ -45,6 +45,8 @@ import inexlanding from "./landings/inexlanding.png";
 import ilumsalanding from "./landings/ilumsalanding.png";
 import dicegamelanding from "./landings/dicegamelanding.png";
 import budgetlanding from "./landings/budgetlanding.png";
+import inventorylanding from "./landings/inventorylanding.png";
+import cbayodelelanding from "./landings/cbayodelelanding.png";
 
 export {
   logo,
@@ -54,8 +56,10 @@ export {
   web,
   menu,
   close,
-  css, sass,
-  git, github,
+  css,
+  sass,
+  git,
+  github,
   html,
   javascript,
   mongodb,
@@ -88,7 +92,8 @@ export {
   fylolanding,
   clipboardlanding,
   inexlanding,
-    ilumsalanding,
-  dicegamelanding,
+  ilumsalanding,
+  dicegamelanding, cbayodelelanding,
   budgetlanding,
+  inventorylanding,
 };

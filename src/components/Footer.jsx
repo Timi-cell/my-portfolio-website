@@ -27,7 +27,7 @@ const Footer = () => {
         {/* <SocialIcon network="mailto" bgColor="red" url="https://x.com/heistimiii" /> */}
       </div>
       <p className="text-sm md:text-base">
-        &copy; {new Date().getFullYear()} - Samuel Aluko (The Crack Dev)
+        &copy; {new Date().getFullYear()} - Samuel O. Aluko (THE CRACK DEV.)
       </p>
     </div>
   );
