@@ -92,19 +92,29 @@ const Projects = () => {
   const displayedProjects = showAll ? projects : projects.slice(0, 4);
   const scrollRef = useRef(null);
 
-  const handleToggle = () => {
-    if (showAll) {
-      setShowAll(false);
-      setTimeout(() => {
-        scrollRef.current?.scrollIntoView({
+const handleToggle = () => {
+  if (showAll) {
+    setShowAll(false);
+
+    setTimeout(() => {
+      if (scrollRef.current) {
+        const extraPaddingTop = 100;
+
+        const elementPosition = scrollRef.current.getBoundingClientRect().top;
+        const offsetPosition =
+          elementPosition + window.pageYOffset - extraPaddingTop;
+
+        window.scrollTo({
+          top: offsetPosition,
           behavior: "smooth",
-          block: "start",
         });
-      }, 100);
-    } else {
-      setShowAll(!showAll);
-    }
-  };
+      }
+    }, 150);
+  } else {
+    setShowAll(true);
+  }
+};
+
 
   return (
     <section className="pt-10" ref={scrollRef} id="projects">
