@@ -15,10 +15,10 @@ const Tech = () => {
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>My Stack.</h2>
       </motion.div>
-      <div className="flex flex-row flex-wrap justify-center gap-10 mt-10">
+      <div className="flex flex-row flex-wrap justify-center gap-20 md:gap-15 mt-10">
         {technologies.map((technology) => (
           <div className="w-28 h-28" key={technology.name}>
-            <motion.div variants={zoomIn()} initial="hidden" whileInView="show">
+            <motion.div variants={zoomIn()} initial="hidden" whileInView="show" className="flex flex-col gap-3">
               <img
                 src={technology.icon}
                 alt={technology.name}
@@ -30,6 +30,7 @@ const Tech = () => {
                     : ""
                 }
               />
+              <p className="text-center mt-1.5 text-base font-extrabold">{technology.displayName}</p>
             </motion.div>
           </div>
         ))}

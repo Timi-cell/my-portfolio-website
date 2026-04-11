@@ -1,8 +1,4 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
   typescript,
   next,
@@ -42,6 +38,7 @@ import {
   inexlanding,
   cbayodelelanding,
   ilumsalanding,
+  movieexplorerlanding,
   dicegamelanding,
   budgetlanding,
 } from "../assets";
@@ -71,82 +68,102 @@ const technologies = [
   {
     name: "html5",
     icon: html,
+    displayName: "HTML",
   },
   {
     name: "css3",
     icon: css,
+    displayName: "CSS",
   },
   {
     name: "js",
     icon: javascript,
+    displayName: "JavaScript",
   },
   {
     name: "ts",
     icon: typescript,
+    displayName: "TypeScript",
   },
   {
     name: "next",
     icon: next,
+    displayName: "Next.js",
   },
   {
     name: "react",
     icon: reactjs,
+    displayName: "React JS",
   },
   {
     name: "redux",
     icon: redux,
+    displayName: "Redux",
   },
   {
     name: "tailwindcss",
     icon: tailwind,
+    displayName: "Tailwind CSS",
   },
   {
     name: "scss",
     icon: sass,
+    displayName: "Sass",
   },
   {
     name: "bootstrapp",
     icon: bootstrap,
+    displayName: "Bootstrap",
   },
   {
     name: "node",
     icon: nodejs,
+    displayName: "Node.js",
   },
   {
     name: "express",
     icon: express,
+    displayName: "Express.js",
   },
   {
     name: "mongo",
     icon: mongodb,
+    displayName: "MongoDB",
   },
   {
     name: "post",
     icon: postman,
+    displayName: "Postman",
   },
   {
     name: "neonn",
     icon: neon,
+    displayName: "Neon",
   },
   {
     name: "stackauthh",
     icon: stackauth,
+    displayName: "StackAuth",
   },
   {
     name: "npmmm",
     icon: npm,
+    displayName: "NPM",
   },
   {
     name: "vitee",
     icon: vite,
+    displayName: "Vite",
   },
   {
     name: "git",
     icon: git,
+    displayName: "Git",
   },
   {
     name: "github",
     icon: github,
+    displayName: "GitHub",
   },
 ];
 
@@ -306,6 +323,72 @@ const projects = [
     live_site_link: "https://www.ilumsa.org/",
   },
   {
+    name: "Movie Explorer",
+    description:
+      "A sleek movie exploration web app that allows users to search, browse, and discover films with ease. It features dynamic results, detailed movie information, and a smooth interface for an enjoyable viewing experience.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "vitest",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "tanstack",
+        color: "white-text-gradient",
+      },
+      {
+        name: "npm",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tmdb-api",
+        color: "green-text-gradient",
+      },
+    ],
+    image: movieexplorerlanding,
+    source_code_link:
+      "https://github.com/Timi-cell/frontend-assessment-samuelaluko",
+
+    live_site_link: "https://movie-explorer-assessment.vercel.app",
+  },
+  {
+    name: "The CBAyodele Brand",
+    description:
+      "A professional portfolio website for a digital marketer showcasing expertise in social media marketing and online growth strategies. The platform highlights services, past projects, and proven approaches used to help brands grow visibility and drive results online.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss(daisyui)",
+        color: "green-text-gradient",
+      },
+      {
+        name: "framer-motion",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "white-text-gradient",
+      },
+    ],
+    image: cbayodelelanding,
+    source_code_link: "https://github.com/Timi-cell/thecbaportfolio",
+    live_site_link: "https://cbayodele.com",
+  },
+  {
     name: "InEx.",
     description:
       "I built InEx back in 2023 out of frustration because I needed a fast and clear interface to log my income and expenses. InEx is an Income-Expense web application that helps you keep track of your income and expenses. You can use a single currency of your choice to log all your transactions, categorize them, and view insightful reports to manage your finances effectively.",
@@ -374,32 +457,7 @@ const projects = [
     source_code_link: "https://github.com/Timi-cell/life-foundation",
     live_site_link: "https://lifefoundation.vercel.app",
   },
-  {
-    name: "The CBAyodele Brand",
-    description:
-      "A professional portfolio website for a digital marketer showcasing expertise in social media marketing and online growth strategies. The platform highlights services, past projects, and proven approaches used to help brands grow visibility and drive results online.",
-    tags: [
-      {
-        name: "reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwindcss(daisyui)",
-        color: "green-text-gradient",
-      },
-      {
-        name: "framer-motion",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "vite",
-        color: "white-text-gradient",
-      },
-    ],
-    image: cbayodelelanding,
-    source_code_link: "https://github.com/Timi-cell/thecbaportfolio",
-    live_site_link: "https://cbayodele.com",
-  },
+
   {
     name: "IVT Manager",
     description:

@@ -40,9 +40,9 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className={`relative w-full h-[550px] mx-auto`}>
+    <section className={`relative w-full h-[480px] md:h-[400px] mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[30px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-3">
           <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
@@ -57,7 +57,7 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi there,
             <br></br>
-            I'm <span className="text-[#915EFF] headerFont">Samuel Aluko</span>
+            I'm <span className="text-[#915EFF] headerFont">Samuel Aluko.</span>
           </h1>
 
           <div className="flex space-x-1 items-start md:items-center mt-3">

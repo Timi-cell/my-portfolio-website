@@ -1,8 +1,4 @@
 import logo from "./dp.jpg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -47,13 +43,10 @@ import dicegamelanding from "./landings/dicegamelanding.png";
 import budgetlanding from "./landings/budgetlanding.png";
 import inventorylanding from "./landings/inventorylanding.png";
 import cbayodelelanding from "./landings/cbayodelelanding.png";
+import movieexplorerlanding from "./landings/movieexplorerlanding.png";
 
 export {
   logo,
-  backend,
-  creator,
-  mobile,
-  web,
   menu,
   close,
   css,
@@ -95,5 +88,5 @@ export {
   ilumsalanding,
   dicegamelanding, cbayodelelanding,
   budgetlanding,
-  inventorylanding,
+  inventorylanding, movieexplorerlanding
 };
