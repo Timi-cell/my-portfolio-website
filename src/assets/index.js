@@ -44,6 +44,7 @@ import budgetlanding from "./landings/budgetlanding.png";
 import inventorylanding from "./landings/inventorylanding.png";
 import cbayodelelanding from "./landings/cbayodelelanding.png";
 import movieexplorerlanding from "./landings/movieexplorerlanding.png";
+import vectosenselanding from "./landings/vectosenselanding.png";
 
 export {
   logo,
@@ -88,5 +89,5 @@ export {
   ilumsalanding,
   dicegamelanding, cbayodelelanding,
   budgetlanding,
-  inventorylanding, movieexplorerlanding
+  inventorylanding, movieexplorerlanding, vectosenselanding
 };
