@@ -41,6 +41,7 @@ import {
   movieexplorerlanding,
   dicegamelanding,
   budgetlanding,
+  vectosenselanding,
 } from "../assets";
 
 export const navLinks = [
@@ -323,6 +324,38 @@ const projects = [
     live_site_link: "https://www.ilumsa.org/",
   },
   {
+    name: "VectoSense",
+    description:
+      "A data-driven platform that transforms complex mosquito resistance data into clear, actionable insights. VectoSense helps health officials and organizations choose effective insecticides and control strategies, improving malaria prevention and enabling smarter, evidence-based decisions across regions. VectoSense shows data from 14 states for now.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss(daisyui)",
+        color: "white-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "pink-text-gradient",
+      },
+
+      {
+        name: "npm",
+        color: "blue-text-gradient",
+      },
+      // {
+      //   name: "framer-motion",
+      //   color: "green-text-gradient",
+      // },
+    ],
+    image: vectosenselanding,
+    source_code_link: "https://github.com/Timi-cell/vectosense",
+
+    live_site_link: "https://vectosense.vercel.app",
+  },
+  {
     name: "Movie Explorer",
     description:
       "A sleek movie exploration web app that allows users to search, browse, and discover films with ease. It features dynamic results, detailed movie information, and a smooth interface for an enjoyable viewing experience.",
@@ -365,7 +398,7 @@ const projects = [
   {
     name: "The CBAyodele Brand",
     description:
-      "A professional portfolio website for a digital marketer showcasing expertise in social media marketing and online growth strategies. The platform highlights services, past projects, and proven approaches used to help brands grow visibility and drive results online.",
+      "A professional portfolio website for a digital marketer showcasing her expertise in social media marketing and online growth strategies. The platform highlights services, past projects, and proven approaches she used to help brands grow visibility and drive results online.",
     tags: [
       {
         name: "reactjs",
