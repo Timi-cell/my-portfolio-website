@@ -38,7 +38,7 @@ import {
   inexlanding,
   cbayodelelanding,
   ilumsalanding,
-  movieexplorerlanding,
+  moviesbanklanding,
   dicegamelanding,
   budgetlanding,
   vectosenselanding,
@@ -356,9 +356,9 @@ const projects = [
     live_site_link: "https://vectosense.vercel.app",
   },
   {
-    name: "Movie Explorer",
+    name: "Movies Bank",
     description:
-      "A sleek movie exploration web app that allows users to search, browse, and discover films with ease. It features dynamic results, detailed movie information, and a smooth interface for an enjoyable viewing experience.",
+      "A sleek movie exploration web app that allows users to search, browse, and discover films with ease. It features dynamic results, detailed movie information, and a smooth interface for an enjoyable experience.",
     tags: [
       {
         name: "nextjs",
@@ -389,11 +389,11 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: movieexplorerlanding,
+    image: moviesbanklanding,
     source_code_link:
       "https://github.com/Timi-cell/frontend-assessment-samuelaluko",
 
-    live_site_link: "https://movie-explorer-assessment.vercel.app",
+    live_site_link: "https://moviesbank.vercel.app",
   },
   {
     name: "The CBAyodele Brand",

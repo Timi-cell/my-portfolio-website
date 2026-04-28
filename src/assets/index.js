@@ -43,7 +43,7 @@ import dicegamelanding from "./landings/dicegamelanding.png";
 import budgetlanding from "./landings/budgetlanding.png";
 import inventorylanding from "./landings/inventorylanding.png";
 import cbayodelelanding from "./landings/cbayodelelanding.png";
-import movieexplorerlanding from "./landings/movieexplorerlanding.png";
+import moviesbanklanding from "./landings/moviesbanklanding.png";
 import vectosenselanding from "./landings/vectosenselanding.png";
 
 export {
@@ -87,7 +87,10 @@ export {
   clipboardlanding,
   inexlanding,
   ilumsalanding,
-  dicegamelanding, cbayodelelanding,
+  dicegamelanding,
+  cbayodelelanding,
   budgetlanding,
-  inventorylanding, movieexplorerlanding, vectosenselanding
+  inventorylanding,
+  moviesbanklanding,
+  vectosenselanding,
 };
