@@ -11,6 +11,7 @@ import github from "./tech/github.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
+import shopify from "./tech/shopify.png";
 import postman from "./tech/postman.png";
 import neon from "./tech/neon.png";
 import stackauth from "./tech/stackauth.png";
@@ -67,6 +68,7 @@ export {
   next,
   npm,
   vite,
+  shopify,
   stackauth,
   bootstrap,
   express,

@@ -8,6 +8,7 @@ import {
   css,
   sass,
   reactjs,
+  shopify,
   redux,
   tailwind,
   nodejs,
@@ -86,6 +87,11 @@ const technologies = [
     name: "ts",
     icon: typescript,
     displayName: "TypeScript",
+  },
+  {
+    name: "shopify",
+    icon: shopify,
+    displayName: "Shopify",
   },
   {
     name: "next",
@@ -293,6 +299,14 @@ const projects = [
       {
         name: "liquid-code",
         color: "pink-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "white-text-gradient",
       },
     ],
     image: tuffmanlanding,
