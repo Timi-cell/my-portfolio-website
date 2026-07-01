@@ -42,6 +42,7 @@ import {
   dicegamelanding,
   budgetlanding,
   vectosenselanding,
+  tuffmanlanding,
 } from "../assets";
 
 export const navLinks = [
@@ -280,6 +281,25 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "TUFFMAN",
+    description:
+      "An elegant e-commerce website for TUFFMAN, the premium brand founded by Nigerian music star, ADEKUNLE GOLD. The platform showcases handcrafted collections like WAVE, a premium earring available in Gold and Silver. The platform also delivers a seamless shopping experience, and reflects the brand's bold identity, luxury, and contemporary style.",
+    tags: [
+      {
+        name: "shopify",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "liquid-code",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tuffmanlanding,
+    // source_code_link: "https://github.com/ilumsa/ilumsa-web",
+
+    live_site_link: "https://tuffman.co",
+  },
   {
     name: "ILUMSA",
     description:

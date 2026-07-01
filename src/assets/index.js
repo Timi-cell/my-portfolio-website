@@ -45,6 +45,7 @@ import inventorylanding from "./landings/inventorylanding.png";
 import cbayodelelanding from "./landings/cbayodelelanding.png";
 import moviesbanklanding from "./landings/moviesbanklanding.png";
 import vectosenselanding from "./landings/vectosenselanding.png";
+import tuffmanlanding from "./landings/tuffmanlanding.png";
 
 export {
   logo,
@@ -93,4 +94,5 @@ export {
   inventorylanding,
   moviesbanklanding,
   vectosenselanding,
+  tuffmanlanding,
 };
