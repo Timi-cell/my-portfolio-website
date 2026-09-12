@@ -340,7 +340,7 @@ const projects = [
     image: diffbydatslanding,
     // source_code_link: "https://github.com/ilumsa/ilumsa-web",
 
-    live_site_link: "https://diffbydats.com",
+    live_site_link: "https://www.diffbydats.com",
   },
   {
     name: "ILUMSA",
