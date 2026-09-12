@@ -44,6 +44,7 @@ import {
   budgetlanding,
   vectosenselanding,
   tuffmanlanding,
+  diffbydatslanding
 } from "../assets";
 
 export const navLinks = [
