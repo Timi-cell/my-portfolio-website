@@ -315,6 +315,33 @@ const projects = [
     live_site_link: "https://tuffman.co",
   },
   {
+    name: "DIFFByDATS",
+    description:
+      "A bold e-commerce website for DiffbyDATS, a contemporary fashion brand focused on distinctive, statement-making pieces. The platform showcases curated jackets, hats, and denim collections through a sleek shopping experience built around the brand’s unique identity.",
+    tags: [
+      {
+        name: "shopify",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "liquid-code",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "white-text-gradient",
+      },
+    ],
+    image: diffbydatslanding,
+    // source_code_link: "https://github.com/ilumsa/ilumsa-web",
+
+    live_site_link: "https://diffbydats.com",
+  },
+  {
     name: "ILUMSA",
     description:
       "The official site for the Ilorin University Medical Students' Association, a student-led body fostering academic excellence, leadership, community service, and professional growth among medical students at the University of Ilorin.",
