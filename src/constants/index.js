@@ -44,7 +44,7 @@ import {
   budgetlanding,
   vectosenselanding,
   tuffmanlanding,
-  diffbydatslanding
+  diffbydatslanding,
 } from "../assets";
 
 export const navLinks = [
@@ -318,7 +318,7 @@ const projects = [
   {
     name: "DIFFByDATS",
     description:
-      "A bold e-commerce website for DiffbyDATS, a contemporary fashion brand focused on distinctive, statement-making pieces. The platform showcases curated jackets, hats, and denim collections through a sleek shopping experience built around the brand’s unique identity.",
+      "A bold e-commerce website for DiffbyDATS, a premium fashion brand founded by master image consultant, JOHN ANGEL. The brand expresses discipline in design through clean cuts, premium materials, and details that actually matter. Click the 'Visit Site' link to explore curated jackets, hats, and denim collections through a sleek shopping experience built around the brand’s unique identity.",
     tags: [
       {
         name: "shopify",
