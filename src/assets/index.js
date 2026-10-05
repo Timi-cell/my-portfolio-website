@@ -1,4 +1,4 @@
-import logo from "./dp.jpg";
+import logo from "./dp.jpeg";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
