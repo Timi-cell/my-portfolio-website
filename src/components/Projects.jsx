@@ -92,11 +92,9 @@ const Projects = () => {
   const displayedProjects = projects.slice(0, visibleProjectCount);
 
   const handleShowMore = () => {
+    const batchSize = window.matchMedia("(min-width: 1024px)").matches ? 2 : 1;
     setVisibleProjectCount((count) => {
-      const remainingProjects = projects.length - count;
-      return remainingProjects <= 3
-        ? projects.length
-        : Math.min(count + 2, projects.length);
+      return Math.min(count + batchSize, projects.length);
     });
   };
 

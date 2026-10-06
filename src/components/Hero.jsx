@@ -40,7 +40,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative mx-auto h-[580px] w-full md:h-[500px]">
+    <section className="relative mx-auto h-[600px] w-full md:h-[520px]">
       <div
         className={`absolute inset-0 top-[30px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 mt-10`}
       >
@@ -84,10 +84,14 @@ const Hero = () => {
               </div>
             </h1>
           </div>
-          <p className="text-foreground-muted text-base lg:text-lg w-full md:w-1/2 mt-4 md:mt-3">
-            I build responsive and captivating websites/web
-            applications for creators, startups and brands. I'm open to
-            collaborations, contracts and part/full time roles.
+          <p className="text-foreground-muted text-base lg:text-lg w-full md:w-1/2 mt-3 md:mt-2">
+            {/* I build beautiful, responsive and results-driven websites for
+            creators, startups and brands. I'm currently open to collaborations,
+            contracts and part/full time roles. */}
+            I care about the website actually helping the business achieve
+            something — not just looking good. I work with creators, new
+            businesses, and established brands. I’m available for freelance
+            projects, contract work, or a full-time/part-time job.
           </p>
           <div class="relative z-10 flex flex-col md:flex-row justify-start items-start gap-2 md:gap-4">
             <a
