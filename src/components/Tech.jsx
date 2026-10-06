@@ -5,7 +5,7 @@ import { technologies } from "../constants";
 import { textVariant } from "../utils/motion";
 import { styles } from "../styles";
 
-const AUTO_SCROLL_SPEED = 60;
+const AUTO_SCROLL_SPEED = 70;
 
 const Tech = () => {
   const marqueeRef = useRef(null);
