@@ -84,7 +84,7 @@ const Hero = () => {
               </div>
             </h1>
           </div>
-          <p className="text-foreground-muted text-base lg:text-lg w-full md:w-1/2 mt-3 md:mt-2">
+          <p className="text-foreground-muted text-base lg:text-lg w-full md:w-1/2 mt-3 md:mt-2 sm:mt-4">
             {/* I work with creators, startups, and established brands. */}
             I build websites designed to drive business growth, not just look
             good. 

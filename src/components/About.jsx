@@ -29,7 +29,7 @@ const About = () => {
           Most websites don't fail because the business is bad. They fail
           because of the first impression. <br /> <br /> I'm Samuel, a Frontend
           Developer who builds websites that make brands look credible and get
-          found. For the past 4+ years, I've been turning ideas into fast,
+          found. For the past 5 years, I've been turning ideas into fast,
           responsive, easy-to-use web applications that turn visitors into loyal
           customers. <br /> <br /> My approach is simple: understand the goal,
           study the design, then write code that's clean, accessible and easy to
