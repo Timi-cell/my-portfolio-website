@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons/component";
@@ -52,16 +52,16 @@ const ProjectCard = ({
       </div>
 
       <div className="mt-5">
-        <h3 className="text-white font-bold text-[24px]">{name}</h3>
+        <h3 className="text-foreground font-bold text-[24px]">{name}</h3>
         <div className="flex items-center gap-3 justify-start text-base mt-2">
           <a href={live_site_link} target="_blank">
-            <button className="bg-gray-700 rounded-2xl px-3 py-1.5 flex items-center gap-1.5">
+            <button className="bg-black-100 text-foreground border border-foreground/10 hover:bg-black-200 rounded-2xl px-3 py-1.5 flex items-center gap-1.5 transition-colors">
               <span>Visit Site</span> <ArrowUpRight size={20} />
             </button>
           </a>
           {source_code_link && (
             <a href={source_code_link} target="_blank">
-              <button className="bg-gray-700 rounded-2xl px-3 py-1.5 flex items-center gap-1.5">
+              <button className="bg-black-100 text-foreground border border-foreground/10 hover:bg-black-200 rounded-2xl px-3 py-1.5 flex items-center gap-1.5 transition-colors">
                 <span>Github Repo</span>{" "}
                 <SocialIcon
                   network="github"
@@ -88,36 +88,20 @@ const ProjectCard = ({
 };
 
 const Projects = () => {
-  const [showAll, setShowAll] = useState(false);
-  const displayedProjects = showAll ? projects : projects.slice(0, 4);
-  const scrollRef = useRef(null);
+  const [visibleProjectCount, setVisibleProjectCount] = useState(4);
+  const displayedProjects = projects.slice(0, visibleProjectCount);
 
-const handleToggle = () => {
-  if (showAll) {
-    setShowAll(false);
-
-    setTimeout(() => {
-      if (scrollRef.current) {
-        const extraPaddingTop = 100;
-
-        const elementPosition = scrollRef.current.getBoundingClientRect().top;
-        const offsetPosition =
-          elementPosition + window.pageYOffset - extraPaddingTop;
-
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: "smooth",
-        });
-      }
-    }, 150);
-  } else {
-    setShowAll(true);
-  }
-};
-
+  const handleShowMore = () => {
+    setVisibleProjectCount((count) => {
+      const remainingProjects = projects.length - count;
+      return remainingProjects <= 3
+        ? projects.length
+        : Math.min(count + 2, projects.length);
+    });
+  };
 
   return (
-    <section className="pt-10" ref={scrollRef} id="projects">
+    <section id="projects">
       <motion.div variants={textVariant()} initial="hidden" whileInView="show">
         <p className={`${styles.sectionSubText} text-center`}>
           Here are some of my works
@@ -140,20 +124,22 @@ const handleToggle = () => {
         </motion.p>
       </div> */}
 
-      <div className="mt-20 grid grid-cols-1  lg:grid-cols-2 items-center gap-x-3 gap-y-6">
+      <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 items-center gap-x-3 gap-y-6">
         {displayedProjects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
 
-      <div className="mt-10 flex justify-center">
-        <button
-          onClick={handleToggle}
-          className="bg-tertiary px-8 py-3 rounded-2xl text-white font-semibold hover:bg-opacity-80 transition-all duration-300"
-        >
-          {showAll ? "See Less Projects" : "See More Projects"}
-        </button>
-      </div>
+      {visibleProjectCount < projects.length && (
+        <div className="mt-10 flex justify-center">
+          <button
+            onClick={handleShowMore}
+            className="bg-black-100 px-8 py-3 rounded-2xl text-foreground font-semibold hover:bg-black-200 transition-all duration-300"
+          >
+            See More Projects
+          </button>
+        </div>
+      )}
     </section>
   );
 };

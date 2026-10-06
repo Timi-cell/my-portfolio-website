@@ -16,10 +16,12 @@ const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#1d1836",
-        color: "#fff",
+        background: "rgb(var(--color-tertiary))",
+        color: "rgb(var(--color-foreground))",
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentArrowStyle={{
+        borderRight: "7px solid rgb(var(--color-tertiary))",
+      }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
@@ -33,7 +35,9 @@ const ExperienceCard = ({ experience }) => {
       }
     >
       <div>
-        <h3 className="text-white text-2xl font-bold">{experience.title}</h3>
+        <h3 className="text-foreground text-2xl font-bold">
+          {experience.title}
+        </h3>
         <p
           className="text-secondary text-xl font-semibold"
           style={{ margin: 0 }}
@@ -58,7 +62,7 @@ const ExperienceCard = ({ experience }) => {
 
 const Experience = () => {
   return (
-    <section className="pt-10">
+    <section>
       <motion.div variants={textVariant()} initial="hidden" whileInView="show">
         <p className={`${styles.sectionSubText} text-center`}>
           What I've done so far
@@ -68,7 +72,7 @@ const Experience = () => {
         </h2>
       </motion.div>
 
-      <div className="mt-20 flex flex-col">
+      <div className="mt-12 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard
