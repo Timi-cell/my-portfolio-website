@@ -418,6 +418,32 @@ const projects = [
     live_site_link: "https://vectosense.vercel.app",
   },
   {
+    name: "The CBAyodele Brand",
+    description:
+      "A professional portfolio website for a digital marketer showcasing her expertise in social media marketing and online growth strategies. The platform highlights services, past projects, and proven approaches she used to help brands grow visibility and drive results online.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss(daisyui)",
+        color: "green-text-gradient",
+      },
+      {
+        name: "framer-motion",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "white-text-gradient",
+      },
+    ],
+    image: cbayodelelanding,
+    source_code_link: "https://github.com/Timi-cell/thecbaportfolio",
+    live_site_link: "https://cbayodele.com",
+  },
+  {
     name: "Movies Bank",
     description:
       "A sleek movie exploration web app that allows users to search, browse, and discover films with ease. It features dynamic results, detailed movie information, and a smooth interface for an enjoyable experience.",
@@ -457,71 +483,46 @@ const projects = [
 
     live_site_link: "https://moviesbank.vercel.app",
   },
-  {
-    name: "The CBAyodele Brand",
-    description:
-      "A professional portfolio website for a digital marketer showcasing her expertise in social media marketing and online growth strategies. The platform highlights services, past projects, and proven approaches she used to help brands grow visibility and drive results online.",
-    tags: [
-      {
-        name: "reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwindcss(daisyui)",
-        color: "green-text-gradient",
-      },
-      {
-        name: "framer-motion",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "vite",
-        color: "white-text-gradient",
-      },
-    ],
-    image: cbayodelelanding,
-    source_code_link: "https://github.com/Timi-cell/thecbaportfolio",
-    live_site_link: "https://cbayodele.com",
-  },
-  {
-    name: "InEx.",
-    description:
-      "I built InEx back in 2023 out of frustration because I needed a fast and clear interface to log my income and expenses. InEx is an Income-Expense web application that helps you keep track of your income and expenses. You can use a single currency of your choice to log all your transactions, categorize them, and view insightful reports to manage your finances effectively.",
-    tags: [
-      {
-        name: "reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "white-text-gradient",
-      },
-      {
-        name: "express",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "css",
-        color: "white-text-gradient",
-      },
-      {
-        name: "npm",
-        color: "green-text-gradient",
-      },
-    ],
-    image: inexlanding,
-    source_code_link: "https://github.com/Timi-cell/inex-frontend",
 
-    live_site_link: "https://inexapp.vercel.app",
-  },
+  // {
+  //   name: "InEx.",
+  //   description:
+  //     "I built InEx back in 2023 out of frustration because I needed a fast and clear interface to log my income and expenses. InEx is an Income-Expense web application that helps you keep track of your income and expenses. You can use a single currency of your choice to log all your transactions, categorize them, and view insightful reports to manage your finances effectively.",
+  //   tags: [
+  //     {
+  //       name: "reactjs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "nodejs",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "mongodb",
+  //       color: "white-text-gradient",
+  //     },
+  //     {
+  //       name: "express",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "scss",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "white-text-gradient",
+  //     },
+  //     {
+  //       name: "npm",
+  //       color: "green-text-gradient",
+  //     },
+  //   ],
+  //   image: inexlanding,
+  //   source_code_link: "https://github.com/Timi-cell/inex-frontend",
+
+  //   live_site_link: "https://inexapp.vercel.app",
+  // },
   {
     name: "L.I.F.E Foundation",
     description:
@@ -553,44 +554,44 @@ const projects = [
     live_site_link: "https://lifefoundation.vercel.app",
   },
 
-  {
-    name: "IVT Manager",
-    description:
-      "A powerful inventory management web application designed to track products, manage stock levels, and monitor sales efficiently. IVT Manager streamlines record-keeping, reduces manual errors, and provides real-time insights to help businesses stay organized and make smarter decisions.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "neon",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "stackauth",
-        color: "white-text-gradient",
-      },
-      {
-        name: "npm",
-        color: "green-text-gradient",
-      },
-    ],
-    image: inventorylanding,
-    source_code_link: "https://github.com/Timi-cell/inventory-management",
-    live_site_link: "https://ivtweb.vercel.app",
-  },
+  // {
+  //   name: "IVT Manager",
+  //   description:
+  //     "A powerful inventory management web application designed to track products, manage stock levels, and monitor sales efficiently. IVT Manager streamlines record-keeping, reduces manual errors, and provides real-time insights to help businesses stay organized and make smarter decisions.",
+  //   tags: [
+  //     {
+  //       name: "nextjs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "typescript",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "tailwindcss",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "neon",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "stackauth",
+  //       color: "white-text-gradient",
+  //     },
+  //     {
+  //       name: "npm",
+  //       color: "green-text-gradient",
+  //     },
+  //   ],
+  //   image: inventorylanding,
+  //   source_code_link: "https://github.com/Timi-cell/inventory-management",
+  //   live_site_link: "https://ivtweb.vercel.app",
+  // },
   {
     name: "GetLinked",
     description:
@@ -636,36 +637,36 @@ const projects = [
     source_code_link: "https://github.com/Timi-cell/ngm-clinic",
     live_site_link: "https://ngmclinic.netlify.app",
   },
-  {
-    name: "Health Bridge",
-    description:
-      "A warm, simple and accessible platform designed to bridge healthcare gaps for families. Health Bridge connects households to trusted medical support, making consultations, guidance, and essential health resources easy to reach, reliable, and tailored to every family’s needs.",
-    tags: [
-      {
-        name: "reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "white-text-gradient",
-      },
-      {
-        name: "npm",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: healthbridgelanding,
-    source_code_link: "https://github.com/Timi-cell/health-bridge",
-    live_site_link: "https://health-bridge.vercel.app",
-  },
+  // {
+  //   name: "Health Bridge",
+  //   description:
+  //     "A warm, simple and accessible platform designed to bridge healthcare gaps for families. Health Bridge connects households to trusted medical support, making consultations, guidance, and essential health resources easy to reach, reliable, and tailored to every family’s needs.",
+  //   tags: [
+  //     {
+  //       name: "reactjs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "scss",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "white-text-gradient",
+  //     },
+  //     {
+  //       name: "npm",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: healthbridgelanding,
+  //   source_code_link: "https://github.com/Timi-cell/health-bridge",
+  //   live_site_link: "https://health-bridge.vercel.app",
+  // },
   {
     name: "Git-X",
     description:
-      "A simple tool that makes discovering GitHub users effortless. FindGitX quickly pulls up profiles, displays key information, and helps developers explore repositories with ease, making it perfect for research, collaboration, and staying connected to the broader developer community.",
+      "A simple tool that makes discovering GitHub users effortless. Git-X quickly pulls up profiles, displays key information, and helps developers explore repositories with ease, making it perfect for research, collaboration, and staying connected to the broader developer community.",
     tags: [
       {
         name: "reactjs",
