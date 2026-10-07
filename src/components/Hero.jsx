@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import SplitTextJS from "split-text-js";
 import { motion } from "framer-motion";
@@ -6,7 +6,30 @@ import { styles } from "../styles";
 import { ArrowUpRight } from "lucide-react";
 import { textVariant } from "../utils/motion";
 
+const greeting = "Hi there,\nI'm Samuel Aluko";
+
 const Hero = () => {
+  const [typedCharacters, setTypedCharacters] = useState(0);
+
+  useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setTypedCharacters(greeting.length);
+      return undefined;
+    }
+
+    let currentCharacter = 0;
+    const typingInterval = window.setInterval(() => {
+      currentCharacter += 1;
+      setTypedCharacters(currentCharacter);
+
+      if (currentCharacter >= greeting.length) {
+        window.clearInterval(typingInterval);
+      }
+    }, 150);
+
+    return () => window.clearInterval(typingInterval);
+  }, []);
+
   useEffect(() => {
     const titles = gsap.utils.toArray(".Typewriter__wrapper");
     const tl = gsap.timeline({ repeat: -1, repeatDelay: 0 });
@@ -39,6 +62,9 @@ const Hero = () => {
     console.log("titles", titles);
   }, []);
 
+  const visibleGreeting = greeting.slice(0, typedCharacters);
+  const [firstLine = "", secondLine = ""] = visibleGreeting.split("\n");
+
   return (
     <section className="relative mx-auto h-[600px] w-full md:h-[520px]">
       <div
@@ -54,10 +80,23 @@ const Hero = () => {
           initial="hidden"
           whileInView="show"
         >
-          <h1 className={styles.heroHeadText}>
-            Hi there,
-            <br></br>
-            I'm <span className="text-[#915EFF] headerFont">Samuel Aluko.</span>
+          <h1
+            // className={styles.heroHeadText}
+            aria-label="Hi there, I'm Samuel Aluko."
+          >
+            <span aria-hidden="true" className={styles.heroHeadText}>
+              {firstLine}
+              <br />
+              {secondLine.slice(0, 4)}
+              <span className="text-[#915EFF] headerFont">
+                {secondLine.slice(4)}
+                {typedCharacters === greeting.length && (
+                  <span className="hero-typing-cursor" aria-hidden="true">
+                    .
+                  </span>
+                )}
+              </span>
+            </span>
           </h1>
 
           <div className="flex space-x-1 items-start md:items-center mt-3">
@@ -85,11 +124,11 @@ const Hero = () => {
             </h1>
           </div>
           <p className="text-foreground-muted text-base lg:text-lg w-full md:w-1/2 mt-3 md:mt-2 sm:mt-4">
-            {/* I work with creators, startups, and established brands. */}
-            I build websites designed to drive business growth, not just look
-            good. 
-            Whether you need a short-term freelancer, a contract partner, or a
-            permanent addition to your team—let’s talk about how I can help.
+            {/* I work with creators, startups, and established brands. */}I
+            build websites designed to drive business growth, not just look
+            good. Whether you need a short-term freelancer, a contract partner,
+            or a permanent addition to your team—let’s talk about how I can
+            help.
           </p>
           <div class="relative z-10 flex flex-col md:flex-row justify-start items-start gap-2 md:gap-4">
             <a
