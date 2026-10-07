@@ -150,7 +150,7 @@ const Hero = () => {
             </a>
             <a
               className="transition-all duration-300 group"
-              href="https://calendly.com/adedayotimilehin10/30min"
+              href="https://calendly.com/samueloaluko/30min"
               target="_blank"
               rel="noopener noreferrer"
             >
