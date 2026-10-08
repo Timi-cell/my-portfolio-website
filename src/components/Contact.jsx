@@ -37,12 +37,30 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (regex.test(form.email)) {
+      const serviceId = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY;
+
+      if (!serviceId || !templateId || !publicKey) {
+        Swal.fire({
+          title: "Contact form unavailable",
+          text: "EmailJS is not configured. Please try again later.",
+          icon: "error",
+          background: "#1f1f1f",
+          color: "#ffffff",
+          iconColor: "#ef4444",
+          confirmButtonText: "Okay",
+          confirmButtonColor: "#ef4444",
+        });
+        return;
+      }
+
       setLoading(true);
 
       emailjs
         .send(
-          import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-          import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+          serviceId,
+          templateId,
           {
             name: form.name,
             to_name: "Samuel Aluko",
@@ -50,7 +68,7 @@ const Contact = () => {
             to_email: "adedayotimilehin10@gmail.com",
             message: form.message,
           },
-          import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
+          publicKey,
         )
         .then(
           () => {
@@ -91,9 +109,14 @@ const Contact = () => {
           (error) => {
             setLoading(false);
             console.error(error);
+            const errorDetails = [error?.status, error?.text || error?.message]
+              .filter(Boolean)
+              .join(": ");
             Swal.fire({
               title: "Message Not Sent!",
-              html: `Something went wrong, ${form.name}. <br />Please try again so that I can attend to you ASAP!`,
+              text: `Something went wrong, ${form.name}. Please try again. ${
+                errorDetails ? `EmailJS error: ${errorDetails}` : ""
+              }`,
               icon: "error",
 
               background: "#1f1f1f",

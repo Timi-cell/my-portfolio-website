@@ -83,7 +83,7 @@ const App = () => {
         <Tech />
         <Projects />
         <div className="relative z-0">
-          <Contact />
+          {/* <Contact /> */}
           <StarsCanvas />
           <Footer />
         </div>

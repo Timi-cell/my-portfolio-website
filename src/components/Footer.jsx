@@ -7,9 +7,10 @@ import "react-social-icons/whatsapp";
 
 const Footer = () => {
   return (
-    <div className="bg-tertiary py-10 px-5 flex flex-col items-center justify-center gap-10 text-base md:text-lg text-center">
+    <div className="bg-tertiary py-10 px-5 flex flex-col items-center justify-center gap-10 text-base md:text-lg text-center" >
       <h2 className="text-base md:text-lg">
-        You can also connect with me via:
+        {/* You can also connect with me via: */}
+        Tap on any of the icons below to connect with me ⇩
       </h2>
 
       <div className="flex items-center justify-center gap-6 flex-wrap">
@@ -27,7 +28,8 @@ const Footer = () => {
         {/* <SocialIcon network="mailto" bgColor="red" url="https://x.com/heistimiii" /> */}
       </div>
       <p className="text-sm md:text-base">
-        &copy; {new Date().getFullYear()} - Samuel O. Aluko (THE CRACK DEV.)
+        {/* &copy; {new Date().getFullYear()} - Samuel O. Aluko (THE CRACK DEV.) */}
+        &copy; {new Date().getFullYear()}
       </p>
     </div>
   );
