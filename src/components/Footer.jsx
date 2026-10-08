@@ -29,7 +29,7 @@ const Footer = () => {
       </div>
       <p className="text-sm md:text-base">
         {/* &copy; {new Date().getFullYear()} - Samuel O. Aluko (THE CRACK DEV.) */}
-        &copy; {new Date().getFullYear()}
+        &copy; {new Date().getFullYear()} - Samuel Aluko
       </p>
     </div>
   );

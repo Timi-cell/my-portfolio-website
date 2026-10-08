@@ -7,6 +7,20 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+const getConfirmButtonClass = (variant) => {
+  const isLightMode = document.documentElement.dataset.theme === "light";
+  const colorClasses = {
+    success: isLightMode
+      ? "bg-indigo-100 text-indigo-900 hover:bg-indigo-200"
+      : "bg-primary text-white hover:bg-primary/80",
+    error: isLightMode
+      ? "bg-red-100 text-red-900 hover:bg-red-200"
+      : "bg-red-500 text-white hover:bg-red-600",
+  };
+
+  return `px-6 py-2 rounded-lg ${colorClasses[variant]} font-semibold transition-all`;
+};
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -37,30 +51,12 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (regex.test(form.email)) {
-      const serviceId = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID;
-      const templateId = import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID;
-      const publicKey = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY;
-
-      if (!serviceId || !templateId || !publicKey) {
-        Swal.fire({
-          title: "Contact form unavailable",
-          text: "EmailJS is not configured. Please try again later.",
-          icon: "error",
-          background: "#1f1f1f",
-          color: "#ffffff",
-          iconColor: "#ef4444",
-          confirmButtonText: "Okay",
-          confirmButtonColor: "#ef4444",
-        });
-        return;
-      }
-
       setLoading(true);
 
       emailjs
         .send(
-          serviceId,
-          templateId,
+          import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
           {
             name: form.name,
             to_name: "Samuel Aluko",
@@ -68,7 +64,7 @@ const Contact = () => {
             to_email: "adedayotimilehin10@gmail.com",
             message: form.message,
           },
-          publicKey,
+          import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
         )
         .then(
           () => {
@@ -87,8 +83,7 @@ const Contact = () => {
               buttonsStyling: false,
               customClass: {
                 popup: "rounded-xl shadow-2xl",
-                confirmButton:
-                  "px-6 py-2 rounded-lg bg-primary text-white font-semibold hover:bg-primary/80 transition-all",
+                confirmButton: getConfirmButtonClass("success"),
               },
 
               // ---- ANIMATION ----
@@ -109,26 +104,20 @@ const Contact = () => {
           (error) => {
             setLoading(false);
             console.error(error);
-            const errorDetails = [error?.status, error?.text || error?.message]
-              .filter(Boolean)
-              .join(": ");
             Swal.fire({
               title: "Message Not Sent!",
-              text: `Something went wrong, ${form.name}. Please try again. ${
-                errorDetails ? `EmailJS error: ${errorDetails}` : ""
-              }`,
+              html: `Something went wrong, ${form.name}.<br /> Please reach me via any of my social media handles if you get this error a second time.`,
               icon: "error",
 
               background: "#1f1f1f",
               color: "#ffffff",
               iconColor: "#ef4444",
-              confirmButtonText: "Retry",
+              confirmButtonText: "Okay",
               confirmButtonColor: "#ef4444",
               buttonsStyling: false,
               customClass: {
                 popup: "rounded-xl shadow-2xl",
-                confirmButton:
-                  "px-6 py-2 rounded-lg bg-red-500 text-white font-semibold hover:bg-red-600 transition-all",
+                confirmButton: getConfirmButtonClass("error"),
               },
 
               showClass: {
@@ -160,8 +149,7 @@ const Contact = () => {
         buttonsStyling: false,
         customClass: {
           popup: "rounded-xl shadow-2xl",
-          confirmButton:
-            "px-6 py-2 rounded-lg bg-red-500 text-white font-semibold hover:bg-red-600 transition-all",
+          confirmButton: getConfirmButtonClass("error"),
         },
 
         showClass: {
